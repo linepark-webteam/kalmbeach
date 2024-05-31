@@ -1,0 +1,10 @@
+/* .container-fluidクラスの余白を削除し画面いっぱいに広がるように設定 */
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
