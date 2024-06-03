@@ -12,8 +12,9 @@ body, html {
   z-index: 10; /* 他の要素の上に表示 */
 }
 
+/* heroセクション */
 .hero {
-  background-image: url(../img/test.jpg);
+  background-image: url(../img/hero.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -40,34 +41,56 @@ body, html {
   font-size: 1rem;
 }
 
-
-/* .shake-item-01 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 2;
-} */
-
-
-
-.wave {
-  position: relative;
+/* hero-section セパレーター */
+.custom-shape-divider-bottom-1717391018 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  height: 55svh; /* 波の高さを調整 */
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%234A3BBF" fill-opacity="1" d="M0,64 C288,192 576,-64 864,64 C1152,192 1440,0 1440,0 L1440,320 L0,320 Z"></path></svg>') no-repeat;
-  background-size: cover;
-  z-index: 1;
+  overflow: hidden;
+  line-height: 0;
 }
 
-.test1 {
+.custom-shape-divider-bottom-1717391018 svg {
+  position: relative;
+  display: block;
+  width: calc(122% + 1.3px);
+  height: 33px;
+}
+
+.custom-shape-divider-bottom-1717391018 .shape-fill {
+  fill: #D4EFFA;
+}
+/* heroセクション */
+
+
+/* Aboutセクション */
+.about {
   position: relative;
   /* padding: 0; */
   width: 100%;
   min-height: 50svh;
   text-align: center;
-  background-color: #4a3bbf;
+  background-color: #d4effa;
   z-index: 2;
   margin-top: -10px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-item {
+  width: 30%;
+  max-width: 1000px;
+}
+
+.about-ttl {
+  margin-top: 5svh;
+}
+.about-txt {
+  margin-top: 15svh;
 }
 
 .test1 .content {

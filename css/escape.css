@@ -1,0 +1,15 @@
+/* .shake-item-01 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+} */
+
+.wave {
+  position: relative;
+  width: 100%;
+  height: 55svh; /* 波の高さを調整 */
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%234A3BBF" fill-opacity="1" d="M0,64 C288,192 576,-64 864,64 C1152,192 1440,0 1440,0 L1440,320 L0,320 Z"></path></svg>') no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
