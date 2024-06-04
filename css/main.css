@@ -1,10 +1,12 @@
 /* 基本のスタイルを記載（MobileFirstの実装とする） */
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   color: #34807c;
-  font-family: "Montserrat", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "Montserrat", "游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .navbar {
@@ -12,7 +14,6 @@ body, html {
   width: 100%;
   background-color: rgba(255, 255, 255, 0); /* 背景を半透明に設定 */
   z-index: 10; /* 他の要素の上に表示 */
-
 }
 
 /* heroセクション */
@@ -115,7 +116,6 @@ body, html {
 }
 /* heroセクション */
 
-
 /* Aboutセクション */
 .about {
   position: relative;
@@ -186,28 +186,77 @@ body, html {
 }
 
 .about-divider .shape-fill {
-  fill: #F7F9D9;
+  fill: #f7f9d9;
 }
+/* Aboutセクション */
 
+/* Projectセクション */
 .project {
   position: relative;
   overflow: hidden;
   /* height: 100svh; */
-  background-color: #F7F9D9;
+  background-color: #f7f9d9;
 }
 
 .project-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 50px 0;
 }
 
-.project-item-txt {
+.project-item-img {
   width: 30%;
+  max-width: 400px;
+}
+
+.project-item-txt {
+  width: 40%;
   max-width: 800px;
   text-align: center;
 }
+.project-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
 
+.project-divider svg {
+  position: relative;
+  display: block;
+  width: calc(122% + 1.3px);
+  height: 41px;
+}
 
+.project-divider .shape-fill {
+  fill: #fcfbf7;
+}
 
+/* vocal(Project-01)セクション */
+.project-01 {
+  background-color: #fcfbf7;
+}
+.project-01-container {
+  display: flex;
+  justify-content: space-around;
+}
+.project-01-contents {
+  display: flex;
+}
+.project-01-img-01 {
+  position: relative;
+  width: 10vw;
+  max-width: 132px;
+  height: 12.35vw;
+  max-height: 163px;
+  bottom: -50%;
+}
+.project-heading {
+  writing-mode: vertical-rl;
+  font-weight: 600;
+}
 
+/* vocal(Project-01)セクション */

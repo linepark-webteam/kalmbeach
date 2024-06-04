@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+  init();
+
   const shakeItems = document.querySelectorAll(".shake-item");
 
   function shake(element, delay) {
@@ -25,11 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       shake(item, Math.random() * 2); // ランダムなタイミングで揺れさせる
     }, (index + 1) * 3000); // 各アイテムを異なるタイミングで揺れさせる
   });
-});
 
-
-
-document.addEventListener("DOMContentLoaded", function() {
   const menuContent = document.querySelector('.menu-content');
   const items = Array.from(menuContent.children);
 
@@ -68,4 +66,32 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+// 初期化関数
+function init() {
+  setupCanvas();  // キャンバス設定
+  window.addEventListener('resize', setupCanvas);  // リサイズ時のキャンバス再設定
+  window.addEventListener('scroll', handleScroll);  // スクロールイベントの処理
+  observeFadeInElements();  // フェードイン要素の監視
+  setupCollapseIconChanges();  // 折りたたみアイコンの動作設定
+  addEventListeners();  // 追加のイベントリスナーを設定
+  positionMobileSocialIconsAboveFooterAndBottomButton();  // フッターの高さに基づくSNSアイコンの位置調整
+}
 
+// フェードイン要素の監視 ビューポートに入る度にアニメーションを実行
+function observeFadeInElements() {
+  const fadeElements = document.querySelectorAll(".fd");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // 要素がビューポートに入るときにクラスを追加
+        entry.target.classList.add("fd-in");
+        // 一度表示された要素は監視から外す
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  fadeElements.forEach(element => {
+    observer.observe(element);
+  });
+}
