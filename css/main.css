@@ -130,10 +130,29 @@ body, html {
 
 .about-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
 }
 
-.about-item {
+.about-item-img-left {
+  position: absolute;
+  width: 15vw;
+  left: 0;
+  bottom: -3svh;
+  opacity: 0.5;
+  z-index: 3;
+}
+.about-item-img-right {
+  position: absolute;
+  width: 15vw;
+  right: 0;
+  bottom: -3svh;
+  opacity: 0.5;
+  z-index: 3;
+}
+
+.about-item-txt {
   width: 30%;
   max-width: 1000px;
 }
@@ -145,16 +164,50 @@ body, html {
   margin-top: 15svh;
 }
 
-.test1 .content {
+.about .content {
   position: relative;
   z-index: 1;
 }
+.about-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
 
+.about-divider svg {
+  position: relative;
+  display: block;
+  width: calc(122% + 1.3px);
+  height: 41px;
+}
 
+.about-divider .shape-fill {
+  fill: #F7F9D9;
+}
 
-.test2 {
+.project {
   position: relative;
   overflow: hidden;
-  height: 100svh;
-  background-color: green;
+  /* height: 100svh; */
+  background-color: #F7F9D9;
 }
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.project-item-txt {
+  width: 30%;
+  max-width: 800px;
+  text-align: center;
+}
+
+
+
+

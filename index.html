@@ -14,9 +14,9 @@
   <!-- ↓ ページの種類（基本変更しなくて良い） -->
   <meta property="og:type" content="website">
   <!-- ↓ ＊にページのタイトルを指定 -->
-	<meta property="og:title" content="＊">
+  <meta property="og:title" content="＊">
   <!-- ↓ ＊にページの簡潔な説明文を指定 -->
-	<meta property="og:description" content="＊">
+  <meta property="og:description" content="＊">
   <!-- ↑↑↑↑ 完成後に作成 ↑↑↑↑ -->
 
   <!-- Favicon -->
@@ -27,8 +27,9 @@
 
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <!-- ↓↓↓↓ CSSを読み込み ↓↓↓↓ -->
   <!-- ↓ リセットCSS -->
@@ -88,7 +89,7 @@
     <div class="grid-item">7</div>
     <div class="grid-item">8</div>
     <div class="grid-item">9</div>
-    <div class="grid-item">10<img  class="shake-item shake-item-01" src="./img/hero-anchor.png" alt=""></div>
+    <div class="grid-item">10<img class="shake-item shake-item-01" src="./img/hero-anchor.png" alt=""></div>
     <div class="grid-item">11</div>
     <div class="grid-item">12</div>
     <div class="grid-item">13</div>
@@ -128,18 +129,19 @@
     <div class="grid-item">47</div>
     <div class="grid-item">48</div>
     <!-- 無限スクロール -->
-    <div class="grid-item">49      <div class="scrolling-menu">
-      <div class="menu-content">
-        <button class="menu-item"><a href="#">Item 1</a></button>
-        <button class="menu-item"><a href="#">Item 2</a></button>
-        <button class="menu-item"><a href="#">Item 3</a></button>
-        <button class="menu-item"><a href="#">Item 4</a></button>
-        <button class="menu-item"><a href="#">Item 5</a></button>
-        <button class="menu-item"><a href="#">Item 6</a></button>
-        <button class="menu-item"><a href="#">Item 7</a></button>
-        <button class="menu-item"><a href="#">Item 8</a></button>
+    <div class="grid-item"><!--49--> <div class="scrolling-menu">
+        <div class="menu-content">
+          <button class="menu-item"><a href="#">Item 1</a></button>
+          <button class="menu-item"><a href="#">Item 2</a></button>
+          <button class="menu-item"><a href="#">Item 3</a></button>
+          <button class="menu-item"><a href="#">Item 4</a></button>
+          <button class="menu-item"><a href="#">Item 5</a></button>
+          <button class="menu-item"><a href="#">Item 6</a></button>
+          <button class="menu-item"><a href="#">Item 7</a></button>
+          <button class="menu-item"><a href="#">Item 8</a></button>
+        </div>
       </div>
-    </div></div>
+    </div>
     <div class="grid-item">50</div>
     <div class="grid-item">51</div>
     <div class="grid-item">52</div>
@@ -157,26 +159,49 @@
     <div class="grid-item">64</div>
     <div class="hero-divider">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        <path
+          d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+          class="shape-fill"></path>
       </svg>
-  </div>
-</section>
+    </div>
+  </section>
 
   <section id="About" class="about container-fluid">
-    <div class="content">
       <div class="about-container">
-        <div class="about-item">
-          <h2 class="about-ttl pt-5">What is ?</h2>
-          <p class="about-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae adipisci, eos minima culpa blanditiis suscipit harum dolorem omnis pariatur fugiat placeat, possimus earum laborum fugit obcaecati non, nihil quos. Reiciendis?</p>
+          <div class="about-item-img">
+            <img class="about-item-img-left" src="./img/about-palm-left.png" alt="">
+          </div>
+          <div class="about-item-txt">
+            <h2 class="about-ttl">What is ?</h2>
+            <p class="about-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae adipisci, eos minima
+              culpa blanditiis suscipit harum dolorem omnis pariatur fugiat placeat, possimus earum laborum fugit
+              obcaecati non, nihil quos. Reiciendis?</p>
+          </div>
+          <div class="about-item-img">
+            <img class="about-item-img-right" src="./img/about-palm-right.png" alt="">
         </div>
-      </div>
+    </div>
+    <div class="about-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"></path>
+      </svg>
     </div>
   </section>
 
 
-<!-- <section class="test2">
-
-</section> -->
+  <section id="Project" class="project container-fluid">
+    <div class="project-container">
+      <div class="project-item-img">
+        <img src="" alt="フェードインロゴ">
+      </div>
+      <div class="project-item-txt">
+        <h2 class="project-ttl">Project</h2>
+        <p class="project-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti incidunt consequatur nemo ab dolorum sint sit repellendus adipisci harum eligendi explicabo necessitatibus officiis ipsam maiores quibusdam commodi, animi beatae optio.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- BootStrap CDN -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
