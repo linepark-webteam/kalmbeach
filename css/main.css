@@ -3,6 +3,8 @@ body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  color: #34807c;
+  font-family: "Montserrat", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .navbar {
@@ -10,6 +12,7 @@ body, html {
   width: 100%;
   background-color: rgba(255, 255, 255, 0); /* 背景を半透明に設定 */
   z-index: 10; /* 他の要素の上に表示 */
+
 }
 
 /* heroセクション */
@@ -41,63 +44,6 @@ body, html {
   font-size: 1rem;
 }
 
-/* hero-section セパレーター */
-.custom-shape-divider-bottom-1717391018 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-bottom-1717391018 svg {
-  position: relative;
-  display: block;
-  width: calc(122% + 1.3px);
-  height: 33px;
-}
-
-.custom-shape-divider-bottom-1717391018 .shape-fill {
-  fill: #D4EFFA;
-}
-/* heroセクション */
-
-
-/* Aboutセクション */
-.about {
-  position: relative;
-  /* padding: 0; */
-  width: 100%;
-  min-height: 50svh;
-  text-align: center;
-  background-color: #d4effa;
-  z-index: 2;
-  margin-top: -10px;
-}
-
-.about-container {
-  display: flex;
-  justify-content: center;
-}
-
-.about-item {
-  width: 30%;
-  max-width: 1000px;
-}
-
-.about-ttl {
-  margin-top: 5svh;
-}
-.about-txt {
-  margin-top: 15svh;
-}
-
-.test1 .content {
-  position: relative;
-  z-index: 1;
-}
-
 /* 無限スクロールメニュー */
 .scrolling-menu {
   overflow: hidden;
@@ -125,10 +71,10 @@ body, html {
   display: block;
   padding: 10px 20px;
   background-color: #f2f2f2;
-  border-radius: 5px;
+  color: #34807c;
+  border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   text-decoration: none;
-  color: inherit;
   text-align: center;
   cursor: pointer;
 }
@@ -146,6 +92,65 @@ body, html {
   }
 }
 /* 無限スクロールメニュー */
+
+/* hero-section セパレーター */
+.hero-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.hero-divider svg {
+  position: relative;
+  display: block;
+  width: calc(122% + 1.3px);
+  height: 33px;
+}
+
+.hero-divider .shape-fill {
+  fill: #d4eef9;
+}
+/* heroセクション */
+
+
+/* Aboutセクション */
+.about {
+  position: relative;
+  /* padding: 0; */
+  width: 100%;
+  min-height: 50svh;
+  text-align: center;
+  background-color: #d4eef9;
+  z-index: 2;
+  margin-top: -10px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-item {
+  width: 30%;
+  max-width: 1000px;
+}
+
+.about-ttl {
+  margin-top: 5svh;
+}
+.about-txt {
+  margin-top: 15svh;
+}
+
+.test1 .content {
+  position: relative;
+  z-index: 1;
+}
+
+
 
 .test2 {
   position: relative;

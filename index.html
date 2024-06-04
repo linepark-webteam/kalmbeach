@@ -25,6 +25,11 @@
   <!-- AppleIcon -->
   <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" sizes="180x180">
 
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <!-- ↓↓↓↓ CSSを読み込み ↓↓↓↓ -->
   <!-- ↓ リセットCSS -->
   <link rel="stylesheet" href="./css/ress.min.css">
@@ -56,7 +61,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto me-3 text-end">
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#About">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Project</a>
@@ -122,7 +127,19 @@
     <div class="grid-item">46</div>
     <div class="grid-item">47</div>
     <div class="grid-item">48</div>
-    <div class="grid-item">49</div>
+    <!-- 無限スクロール -->
+    <div class="grid-item">49      <div class="scrolling-menu">
+      <div class="menu-content">
+        <button class="menu-item"><a href="#">Item 1</a></button>
+        <button class="menu-item"><a href="#">Item 2</a></button>
+        <button class="menu-item"><a href="#">Item 3</a></button>
+        <button class="menu-item"><a href="#">Item 4</a></button>
+        <button class="menu-item"><a href="#">Item 5</a></button>
+        <button class="menu-item"><a href="#">Item 6</a></button>
+        <button class="menu-item"><a href="#">Item 7</a></button>
+        <button class="menu-item"><a href="#">Item 8</a></button>
+      </div>
+    </div></div>
     <div class="grid-item">50</div>
     <div class="grid-item">51</div>
     <div class="grid-item">52</div>
@@ -138,30 +155,15 @@
     <div class="grid-item">62</div>
     <div class="grid-item">63</div>
     <div class="grid-item">64</div>
-    <div class="custom-shape-divider-bottom-1717391018">
+    <div class="hero-divider">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
       </svg>
   </div>
 </section>
 
- <!-- 正弦波を表示 -->
-  <!-- <div class="wave"></div> -->
-
-  <section class="about container-fluid">
+  <section id="About" class="about container-fluid">
     <div class="content">
-      <!-- <div class="scrolling-menu">
-        <div class="menu-content">
-          <button class="menu-item"><a href="#">Item 1</a></button>
-          <button class="menu-item"><a href="#">Item 2</a></button>
-          <button class="menu-item"><a href="#">Item 3</a></button>
-          <button class="menu-item"><a href="#">Item 4</a></button>
-          <button class="menu-item"><a href="#">Item 5</a></button>
-          <button class="menu-item"><a href="#">Item 6</a></button>
-          <button class="menu-item"><a href="#">Item 7</a></button>
-          <button class="menu-item"><a href="#">Item 8</a></button>
-        </div>
-      </div> -->
       <div class="about-container">
         <div class="about-item">
           <h2 class="about-ttl pt-5">What is ?</h2>
@@ -187,7 +189,7 @@
   <!-- Draggable CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
   <!-- 自作のJS -->
-  <!-- <script src="./js/app.js"></script> -->
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
