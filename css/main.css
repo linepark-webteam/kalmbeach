@@ -241,7 +241,7 @@ html {
   position: relative;
 }
 .project-01-container {
-  padding: 100px 0;
+  padding: 150px 0;
   display: flex;
   justify-content: center;
 }
@@ -306,7 +306,7 @@ html {
   position: relative;
 }
 .project-02-container {
-  padding: 100px 0;
+  padding: 150px 0;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -367,13 +367,13 @@ html {
 }
 /* SNS配信…(Project-02)セクション */
 
-/* vocal(Project-03)セクション */
+/* apparel(Project-03)セクション */
 .project-03 {
   background-color: #fcfbf7;
   position: relative;
 }
 .project-03-container {
-  padding: 100px 0;
+  padding: 150px 0;
   display: flex;
   justify-content: center;
 }
@@ -430,4 +430,306 @@ html {
 .project-03-divider .shape-fill {
   fill: #D4EEF9;
 }
-/* vocal(project-03)セクション */
+/* apparel(project-03)セクション */
+
+/* コーチング…(Project-04)セクション */
+.project-04 {
+  background-color: #D4EEF9;
+  position: relative;
+}
+.project-04-container {
+  padding: 150px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.project-04-ttl {
+  display: flex;
+  justify-content: end;
+  margin-left: 10vw;
+
+}
+.project-04-img-01 {
+  position: relative;
+  width: 10vw;
+  max-width: 103px;
+  height: 9.42vw;
+  max-height: 97px;
+  bottom: -30%;
+}
+.project-04-heading {
+  writing-mode: vertical-rl;
+  font-weight: 600;
+}
+.project-04-desc {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.project-04-img-02 {
+  position: relative;
+  width: 20vw;
+  max-width: 302px;
+  height: 13.3vw;
+  max-height: 201px;
+}
+.project-04-txt {
+  width: 30vw;
+  margin-right: 10vw;
+}
+.project-04-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.project-04-divider svg {
+  position: relative;
+  display: block;
+  width: calc(104% + 1.3px);
+  height: 31px;
+}
+
+.project-04-divider .shape-fill {
+  fill: #FCFBF7;
+}
+
+/* コーチング…(Project-04)セクション */
+
+/* Webプロダクト(project-05)セクション */
+.project-05 {
+  background-color: #fcfbf7;
+  position: relative;
+}
+.project-05-container {
+  padding: 150px 0;
+  display: flex;
+  justify-content: center;
+}
+.project-05-ttl {
+  display: flex;
+  justify-content: end;
+  margin-right: 10vw;
+
+}
+.project-05-img-01 {
+  position: relative;
+  width: 10vw;
+  max-width: 119px;
+  height: 9.58vw;
+  max-height: 114px;
+  bottom: -30%;
+}
+.project-05-heading {
+  writing-mode: vertical-rl;
+  font-weight: 600;
+}
+.project-05-desc {
+  display: flex;
+  align-items: center;
+}
+.project-05-img-02 {
+  position: relative;
+  width: 20vw;
+  max-width: 302px;
+  height: 13.3vw;
+  max-height: 201px;
+}
+.project-05-txt {
+  width: 30vw;
+  margin-left: 10vw;
+}
+.project-05-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.project-05-divider svg {
+  position: relative;
+  display: block;
+  width: calc(126% + 1.3px);
+  height: 70px;
+}
+
+.project-05-divider .shape-fill {
+  fill: #D4EEF9;
+}
+/* Webプロダクト(project-05)セクション */
+
+/* イベント企画…(project-06)セクション */
+.project-06 {
+  background-color: #D4EEF9;
+  position: relative;
+}
+.project-06-container {
+  padding: 150px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.project-06-ttl {
+  display: flex;
+  justify-content: end;
+  margin-left: 10vw;
+
+}
+.project-06-img-01 {
+  position: relative;
+  width: 10vw;
+  max-width: 90px;
+  height: 12.2vw;
+  max-height: 110px;
+  rotate: 80deg;
+  bottom: -30%;
+}
+.project-06-heading {
+  writing-mode: vertical-rl;
+  font-weight: 600;
+}
+.project-06-desc {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.project-06-img-02 {
+  position: relative;
+  width: 20vw;
+  max-width: 302px;
+  height: 13.3vw;
+  max-height: 201px;
+}
+.project-06-txt {
+  width: 30vw;
+  margin-right: 10vw;
+}
+.project-06-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.project-06-divider svg {
+  position: relative;
+  display: block;
+  width: calc(104% + 1.3px);
+  height: 31px;
+}
+
+.project-06-divider .shape-fill {
+  fill: #FCFBF7;
+}
+
+/* イベント企画…(project-06)セクション */
+
+/* 仕入れ販売(project-07)セクション */
+.project-07 {
+  background-color: #fcfbf7;
+  position: relative;
+}
+.project-07-container {
+  padding: 150px 0;
+  display: flex;
+  justify-content: center;
+}
+.project-07-ttl {
+  display: flex;
+  justify-content: end;
+  margin-right: 10vw;
+
+}
+.project-07-img-01 {
+  position: relative;
+  width: 10vw;
+  max-width: 119px;
+  height: 9.58vw;
+  max-height: 114px;
+  bottom: -30%;
+}
+.project-07-heading {
+  writing-mode: vertical-rl;
+  font-weight: 600;
+}
+.project-07-desc {
+  display: flex;
+  align-items: center;
+}
+.project-07-img-02 {
+  position: relative;
+  width: 20vw;
+  max-width: 302px;
+  height: 13.3vw;
+  max-height: 201px;
+}
+.project-07-txt {
+  width: 30vw;
+  margin-left: 10vw;
+}
+.project-07-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.project-07-divider svg {
+  position: relative;
+  display: block;
+  width: calc(126% + 1.3px);
+  height: 70px;
+}
+
+.project-07-divider .shape-fill {
+  fill: #D4EEF9;
+}
+/* 仕入れ販売(project-07)セクション */
+
+/* 会社概要セクション */
+
+.custom-shape-divider-bottom-1717564216 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1717564216 svg {
+  position: relative;
+  display: block;
+  width: calc(110% + 1.3px);
+  height: 50px;
+}
+
+.custom-shape-divider-bottom-1717564216 .shape-fill {
+  fill: #FFFFFE;
+}
+
+/* 会社概要セクション */
+
+/* フッターセクション */
+.footer {
+  background-color: #FFFFFE;
+}
+
+/* フッターセクション */
+
+
+
