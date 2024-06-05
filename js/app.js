@@ -66,32 +66,54 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// 初期化関数
-function init() {
-  setupCanvas();  // キャンバス設定
-  window.addEventListener('resize', setupCanvas);  // リサイズ時のキャンバス再設定
-  window.addEventListener('scroll', handleScroll);  // スクロールイベントの処理
-  observeFadeInElements();  // フェードイン要素の監視
-  setupCollapseIconChanges();  // 折りたたみアイコンの動作設定
-  addEventListeners();  // 追加のイベントリスナーを設定
-  positionMobileSocialIconsAboveFooterAndBottomButton();  // フッターの高さに基づくSNSアイコンの位置調整
-}
 
-// フェードイン要素の監視 ビューポートに入る度にアニメーションを実行
-function observeFadeInElements() {
-  const fadeElements = document.querySelectorAll(".fd");
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        // 要素がビューポートに入るときにクラスを追加
-        entry.target.classList.add("fd-in");
-        // 一度表示された要素は監視から外す
-        observer.unobserve(entry.target);
-      }
+document.addEventListener("DOMContentLoaded", function () {
+  init();
+
+  function init() {
+    observeSlideInElements();  // スライドイン要素の監視
+    observeFadeInElements();   // フェードイン要素の監視
+  }
+
+  function observeSlideInElements() {
+    const slideLeftElements = document.querySelectorAll(".slide-left");
+    const slideRightElements = document.querySelectorAll(".slide-right");
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          if (entry.target.classList.contains("slide-left")) {
+            entry.target.classList.add("slide-left-in");  // 実際に左からスライドイン
+          } else if (entry.target.classList.contains("slide-right")) {
+            entry.target.classList.add("slide-right-in");  // 実際に右からスライドイン
+          }
+          observer.unobserve(entry.target);  // 一度表示された要素は監視から外す
+        }
+      });
     });
-  });
 
-  fadeElements.forEach(element => {
-    observer.observe(element);
-  });
-}
+    slideLeftElements.forEach(element => {
+      observer.observe(element);
+    });
+
+    slideRightElements.forEach(element => {
+      observer.observe(element);
+    });
+  }
+
+  function observeFadeInElements() {
+    const fadeElements = document.querySelectorAll(".fd");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fd-in-visible");  // 実際にフェードイン
+          observer.unobserve(entry.target);  // 一度表示された要素は監視から外す
+        }
+      });
+    });
+
+    fadeElements.forEach(element => {
+      observer.observe(element);
+    });
+  }
+});

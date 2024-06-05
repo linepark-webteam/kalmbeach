@@ -238,13 +238,18 @@ html {
 /* vocal(Project-01)セクション */
 .project-01 {
   background-color: #fcfbf7;
+  position: relative;
 }
 .project-01-container {
+  padding: 100px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
-.project-01-contents {
+.project-01-ttl {
   display: flex;
+  justify-content: end;
+  margin-right: 10vw;
+
 }
 .project-01-img-01 {
   position: relative;
@@ -252,11 +257,177 @@ html {
   max-width: 132px;
   height: 12.35vw;
   max-height: 163px;
-  bottom: -50%;
+  bottom: -30%;
 }
-.project-heading {
+.project-01-heading {
   writing-mode: vertical-rl;
   font-weight: 600;
 }
+.project-01-desc {
+  display: flex;
+  align-items: center;
+}
+.project-01-img-02 {
+  position: relative;
+  width: 20vw;
+  max-width: 302px;
+  height: 13.3vw;
+  max-height: 201px;
+}
+.project-01-txt {
+  width: 30vw;
+  margin-left: 10vw;
+}
+.project-01-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
 
+.project-01-divider svg {
+  position: relative;
+  display: block;
+  width: calc(126% + 1.3px);
+  height: 70px;
+}
+
+.project-01-divider .shape-fill {
+  fill: #D4EEF9;
+}
 /* vocal(Project-01)セクション */
+
+/* SNS配信…(Project-02)セクション */
+.project-02 {
+  background-color: #D4EEF9;
+  position: relative;
+}
+.project-02-container {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.project-02-ttl {
+  display: flex;
+  justify-content: end;
+  margin-left: 10vw;
+
+}
+.project-02-img-01 {
+  position: relative;
+  width: 10vw;
+  max-width: 132px;
+  height: 12.35vw;
+  max-height: 163px;
+  bottom: -30%;
+}
+.project-02-heading {
+  writing-mode: vertical-rl;
+  font-weight: 600;
+}
+.project-02-desc {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.project-02-img-02 {
+  position: relative;
+  width: 20vw;
+  max-width: 302px;
+  height: 13.3vw;
+  max-height: 201px;
+}
+.project-02-txt {
+  width: 30vw;
+  margin-right: 10vw;
+}
+.project-02-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.project-02-divider svg {
+  position: relative;
+  display: block;
+  width: calc(104% + 1.3px);
+  height: 31px;
+}
+
+.project-02-divider .shape-fill {
+  fill: #FCFBF7;
+}
+/* SNS配信…(Project-02)セクション */
+
+/* vocal(Project-03)セクション */
+.project-03 {
+  background-color: #fcfbf7;
+  position: relative;
+}
+.project-03-container {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+.project-03-ttl {
+  display: flex;
+  justify-content: end;
+  margin-right: 10vw;
+
+}
+.project-03-img-01 {
+  position: relative;
+  width: 10vw;
+  max-width: 119px;
+  height: 9.58vw;
+  max-height: 114px;
+  bottom: -30%;
+}
+.project-03-heading {
+  writing-mode: vertical-rl;
+  font-weight: 600;
+}
+.project-03-desc {
+  display: flex;
+  align-items: center;
+}
+.project-03-img-02 {
+  position: relative;
+  width: 20vw;
+  max-width: 302px;
+  height: 13.3vw;
+  max-height: 201px;
+}
+.project-03-txt {
+  width: 30vw;
+  margin-left: 10vw;
+}
+.project-03-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.project-03-divider svg {
+  position: relative;
+  display: block;
+  width: calc(126% + 1.3px);
+  height: 70px;
+}
+
+.project-03-divider .shape-fill {
+  fill: #D4EEF9;
+}
+/* vocal(project-03)セクション */

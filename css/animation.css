@@ -1,12 +1,51 @@
-/* アニメーションに使用するスタイルを記載 */
+/* アニメーション用のCSS */
 
-/* フェードイン効果のスタイル */
+/* フェードイン */
+/* 初期状態でのフェードイン効果のスタイル */
 .fd {
-  opacity: 0;  /* 初期状態で要素を透明に */
-  transition: opacity 1s ease-in-out;  /* フェードインのアニメーション */
+  /* 初期状態で要素を透明に */
+  opacity: 0;
+  /* フェードインのアニメーションがスムーズに行われるように */
+  transition: opacity 1s ease-in-out;
 }
 
 /* フェードインされた状態のスタイル */
-.fd-in {
-  opacity: 1;  /* フェードインで表示される */
+.fd-in-visible {
+  /* フェードインで表示される */
+  opacity: 1;
+}
+
+/* スライドイン */
+/* 初期状態でのスライドイン効果のスタイル */
+.slide-left {
+  /* 初期状態で要素を左にオフセット */
+  transform: translateX(-100%);
+  /* 必要に応じて透明度を追加 */
+  /* opacity: 0; */
+  /* スライドインのアニメーションがスムーズに行われるように */
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+/* スライドインされた状態のスタイル */
+.slide-left-in {
+  /* スライドインで表示される位置 */
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* 右からスライドイン効果のスタイル */
+.slide-right {
+  /* 初期状態で要素を右にオフセット */
+  transform: translateX(100%);
+  /* 必要に応じて透明度を追加 */
+  /* opacity: 0; */
+  /* スライドインのアニメーションがスムーズに行われるように */
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+/* スライドインされた状態のスタイル */
+.slide-right-in {
+  /* スライドインで表示される位置 */
+  transform: translateX(0);
+  opacity: 1;
 }
