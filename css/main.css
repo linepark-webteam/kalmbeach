@@ -208,6 +208,9 @@ html {
   width: 30%;
   max-width: 400px;
 }
+.project-item-img-simbol {
+  width: inherit;
+}
 
 .project-item-txt {
   width: 40%;
@@ -257,7 +260,8 @@ html {
   max-width: 132px;
   height: 12.35vw;
   max-height: 163px;
-  bottom: -30%;
+  bottom: -65%;
+  margin-right: 20px;
 }
 .project-01-heading {
   writing-mode: vertical-rl;
@@ -320,10 +324,10 @@ html {
 .project-02-img-01 {
   position: relative;
   width: 10vw;
-  max-width: 132px;
-  height: 12.35vw;
-  max-height: 163px;
-  bottom: -30%;
+  max-width: 112px;
+  height: 13.21vw;
+  max-height: 148px;
+  bottom: -80%;
 }
 .project-02-heading {
   writing-mode: vertical-rl;
@@ -389,7 +393,7 @@ html {
   max-width: 119px;
   height: 9.58vw;
   max-height: 114px;
-  bottom: -30%;
+  bottom: -80%;
 }
 .project-03-heading {
   writing-mode: vertical-rl;
@@ -455,10 +459,11 @@ html {
   max-width: 103px;
   height: 9.42vw;
   max-height: 97px;
-  bottom: -30%;
+  bottom: -80%;
 }
 .project-04-heading {
   writing-mode: vertical-rl;
+  text-align: center;
   font-weight: 600;
 }
 .project-04-desc {
@@ -522,11 +527,12 @@ html {
   max-width: 119px;
   height: 9.58vw;
   max-height: 114px;
-  bottom: -30%;
+  bottom: -80%;
 }
 .project-05-heading {
   writing-mode: vertical-rl;
   font-weight: 600;
+  text-align: center;
 }
 .project-05-desc {
   display: flex;
@@ -585,11 +591,10 @@ html {
 .project-06-img-01 {
   position: relative;
   width: 10vw;
-  max-width: 90px;
-  height: 12.2vw;
-  max-height: 110px;
-  rotate: 80deg;
-  bottom: -30%;
+  max-width: 102px;
+  height: 11.57vw;
+  max-height: 118px;
+  bottom: -90%;
 }
 .project-06-heading {
   writing-mode: vertical-rl;
@@ -656,11 +661,12 @@ html {
   max-width: 119px;
   height: 9.58vw;
   max-height: 114px;
-  bottom: -30%;
+  bottom: -80%;
 }
 .project-07-heading {
   writing-mode: vertical-rl;
   font-weight: 600;
+  text-align: center;
 }
 .project-07-desc {
   display: flex;
@@ -700,8 +706,60 @@ html {
 /* 仕入れ販売(project-07)セクション */
 
 /* 会社概要セクション */
+.company {
+  position: relative;
+  /* padding: 0; */
+  width: 100%;
+  min-height: 50svh;
+  text-align: center;
+  background-color: #d4eef9;
+  z-index: 2;
+  margin-top: -10px;
+}
 
-.custom-shape-divider-bottom-1717564216 {
+.company-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10svh 0;
+  position: relative;
+  width: 100%;
+}
+
+.company-item-img-left {
+  position: relative;
+  width: 15vw;
+  left: 0;
+  bottom: -10svh;
+  z-index: 3;
+}
+.company-item-img-right {
+  position: relative;
+  width: 15vw;
+  right: 0;
+  bottom: -10svh;
+  z-index: 3;
+}
+
+.company-item-desc {
+  width: 60%;
+  max-width: 1000px;
+  display: flex;
+}
+
+.company-ttl {
+  width: 15vw;
+  max-width: 300px;
+}
+.company-txt {
+
+}
+
+.company .content {
+  position: relative;
+  z-index: 1;
+}
+
+.company-divider {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -711,14 +769,14 @@ html {
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1717564216 svg {
+.company-divider svg {
   position: relative;
   display: block;
   width: calc(110% + 1.3px);
   height: 50px;
 }
 
-.custom-shape-divider-bottom-1717564216 .shape-fill {
+.company-divider .shape-fill {
   fill: #FFFFFE;
 }
 
