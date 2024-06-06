@@ -44,6 +44,10 @@ html {
   align-items: center;
   font-size: 1rem;
 }
+.grid-item.scrolling {
+  grid-row: 7 / span 7;
+  grid-column: 1 / -1;
+}
 
 /* 無限スクロールメニュー */
 .scrolling-menu {
@@ -750,8 +754,15 @@ html {
   width: 15vw;
   max-width: 300px;
 }
-.company-txt {
-
+.company-desc {
+  margin-left: 10vw;
+}
+.company-table-body {
+  text-align: left;
+  vertical-align: top;
+}
+.company-table-body td {
+  padding: 5px;
 }
 
 .company .content {
