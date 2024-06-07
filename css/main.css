@@ -91,8 +91,55 @@ html {
   max-height: 114px;
 }
 
+/* 浜辺のアイテム */
+.hero-item-01 {
+  position: absolute;
+  bottom: 43%;
+  left: 27%;
+  width: 5vw;
+  max-width: 34px;
+  height: 4.12vw;
+  max-height: 28px;
+}
+.hero-item-02 {
+  position: absolute;
+  bottom: 48%;
+  left: 34%;
+  width: 5vw;
+  max-width: 54px;
+  height: 5.1vw;
+  max-height: 55px;
+}
+.hero-item-03 {
+  position: absolute;
+  bottom: 80%;
+  left: 38%;
+  width: 5vw;
+  max-width: 35px;
+  height: 3.86vw;
+  max-height: 27px;
+}
+.hero-item-04 {
+  position: absolute;
+  bottom: 50%;
+  left: 55%;
+  width: 5vw;
+  max-width: 41px;
+  height: 4.88vw;
+  max-height: 40px;
+}
+.hero-item-05 {
+  position: absolute;
+  bottom: 68%;
+  left: 80%;
+  width: 5vw;
+  max-width: 70px;
+  height: 7.21vw;
+  max-height: 101px;
+}
 
-/* 無限スクロールメニュー */
+
+
 /* 無限スクロールメニュー */
 .scrolling-menu {
   overflow: hidden;
@@ -114,14 +161,14 @@ html {
   max-width: 300px;
   background-color: transparent;
   border: none;
-  margin: 0 5px;
+  margin: 0 15px;
   padding: 0;
 }
 
 .menu-item a {
   display: block;
   padding: 10px 20px;
-  background-color: #f2f2f2;
+  background-color: #f2f2f295;
   color: #34807c;
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -183,22 +230,23 @@ html {
   justify-content: space-between;
   position: relative;
   width: 100%;
+  padding: 100px 0;
 }
 
 .about-item-img-left {
   position: absolute;
   width: 15vw;
   left: 0;
-  bottom: -3svh;
-  opacity: 0.5;
+  bottom: 0;
+  /* opacity: 0.5; */
   z-index: 3;
 }
 .about-item-img-right {
   position: absolute;
   width: 15vw;
   right: 0;
-  bottom: -3svh;
-  opacity: 0.5;
+  bottom: 0;
+  /* opacity: 0.5; */
   z-index: 3;
 }
 
@@ -211,7 +259,7 @@ html {
   margin-top: 5svh;
 }
 .about-txt {
-  margin-top: 15svh;
+  margin-top: 10svh;
 }
 
 .about .content {
@@ -251,21 +299,27 @@ html {
 .project-container {
   display: flex;
   justify-content: center;
-  padding: 50px 0;
+  align-items: center;
+  padding: 100px 0;
 }
 
 .project-item-img {
-  width: 30%;
-  max-width: 400px;
+  margin: 0 100px;
 }
 .project-item-img-simbol {
-  width: inherit;
+  width: 10vw;
 }
 
 .project-item-txt {
   width: 40%;
   max-width: 800px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project-txt {
+  margin-top: 10svh;
 }
 .project-divider {
   position: absolute;
@@ -842,6 +896,17 @@ html {
 /* フッターセクション */
 .footer {
   background-color: #FFFFFE;
+}
+.footer-items {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+.footer-item-link {
+  width: 50vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /* フッターセクション */
