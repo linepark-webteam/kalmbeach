@@ -1,0 +1,63 @@
+/* 基本のスタイルを記載（MobileFirstの実装とする） */
+body,
+html {
+  background-color: #160b35;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #f1eed3;
+  font-family: "Montserrat", "游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0); /* 背景を半透明に設定 */
+  z-index: 10; /* 他の要素の上に表示 */
+}
+
+.nav-link {
+  color: #f1eed3;
+  text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+}
+
+/* heroセクション */
+.hero {
+  margin: 100px 0 200px;
+}
+.hero-ttl-box {
+  text-align: right;
+  margin-right: 5vw;
+}
+.hero-ttl {
+  width: 55vw;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero-img {
+  width: 20vw;
+}
+
+.hero-desc {
+  width: 40vw;
+}
+.hero-desc-txt {
+  text-align: center;
+}
+
+.hero-desc-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  text-align: center;
+}
+footer small {
+  padding: 20px 0;
+}
