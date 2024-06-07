@@ -98,3 +98,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+
+// イントロアニメーション
+document.addEventListener("DOMContentLoaded", function () {
+  const openingAnimation = document.getElementById('opening-animation');
+  const body = document.body;
+
+  // 最初にbodyを透明にする
+  body.style.opacity = '0';
+  body.style.transition = 'opacity 2s';
+
+  openingAnimation.addEventListener('animationend', function (e) {
+    if (e.animationName === 'fadeOut') {
+      openingAnimation.style.display = 'none';
+      body.style.opacity = '1'; // ページ全体をフェードイン
+    }
+  });
+});
