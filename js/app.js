@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function init() {
     observeSlideInElements();  // スライドイン要素の監視
     observeFadeInElements();   // フェードイン要素の監視
-    setupShakeItems();         // shake-itemのセットアップ
+    setupShakeItems();  // shake-itemのセットアップ
   }
 
   function observeSlideInElements() {
@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function setupShakeItems() {
     const shakeItems = document.querySelectorAll(".shake-item");
+    const menuItems = document.querySelectorAll(".menu-item a");
 
     function shake(element, delay) {
       gsap.fromTo(
@@ -81,6 +82,18 @@ document.addEventListener("DOMContentLoaded", function () {
     shakeItems.forEach(item => {
       item.addEventListener('mouseenter', () => {
         shake(item, 0);
+      });
+    });
+
+    // 対応するメニューアイテムにホバーした際にも対応するshake-itemを震えさせる
+    menuItems.forEach(menuItem => {
+      const targetId = menuItem.getAttribute('href').slice(1); // IDを取得
+      const targetElement = document.querySelector(`.hero-container a[href='#${targetId}'] img`);
+
+      menuItem.addEventListener('mouseenter', () => {
+        if (targetElement) {
+          shake(targetElement, 0);
+        }
       });
     });
   }

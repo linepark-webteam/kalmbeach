@@ -93,6 +93,7 @@ html {
 
 
 /* 無限スクロールメニュー */
+/* 無限スクロールメニュー */
 .scrolling-menu {
   overflow: hidden;
   width: 100vw; /* 全幅 */
@@ -104,7 +105,7 @@ html {
 .menu-content {
   display: flex;
   white-space: nowrap;
-  animation: scrollLeft 15s linear infinite;
+  animation: scrollLeft 30s linear infinite;
 }
 
 .menu-item {
