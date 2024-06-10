@@ -138,8 +138,6 @@ html {
   max-height: 101px;
 }
 
-
-
 /* 無限スクロールメニュー */
 .scrolling-menu {
   overflow: hidden;
@@ -307,7 +305,8 @@ html {
   margin: 0 100px;
 }
 .project-item-img-simbol {
-  width: 10vw;
+  width: 20vw;
+  max-width: 202px;
 }
 
 .project-item-txt {
@@ -342,50 +341,176 @@ html {
   fill: #fcfbf7;
 }
 
-/* vocal(Project-01)セクション */
-.project-01 {
+/* project section 共通部分 */
+.project-01-img-02,
+.project-02-img-02,
+.project-03-img-02,
+.project-04-img-02,
+.project-05-img-02,
+.project-06-img-02,
+.project-07-img-02 {
+  position: relative;
+  width: 65vw;
+  max-width: 604px;
+  height: 43.26vw;
+  max-height: 402px;
+}
+@media screen and (min-width: 960px) {
+  .project-01-img-02,
+  .project-02-img-02,
+  .project-03-img-02,
+  .project-04-img-02,
+  .project-05-img-02,
+  .project-06-img-02,
+  .project-07-img-02 {
+    width: 20vw;
+    max-width: 302px;
+    height: 13.3vw;
+    max-height: 201px;
+  }
+}
+
+/* project section 共通部分 */
+
+/* project奇数section */
+.project-01,
+.project-03,
+.project-05,
+.project-07 {
   background-color: #fcfbf7;
   position: relative;
 }
-.project-01-container {
+.project-01-container,
+.project-03-container,
+.project-05-container,
+.project-07-container {
   padding: 150px 0;
   display: flex;
   justify-content: center;
 }
-.project-01-ttl {
+.project-01-ttl,
+.project-03-ttl,
+.project-05-ttl,
+.project-07-ttl {
   display: flex;
   justify-content: end;
   margin-right: 10vw;
-
 }
+.project-01-heading,
+.project-03-heading,
+.project-05-heading,
+.project-07-heading {
+  writing-mode: vertical-rl;
+  font-weight: 600;
+  text-align: center;
+}
+.project-01-desc,
+.project-03-desc,
+.project-05-desc,
+.project-07-desc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 960px) {
+  .project-01-desc,
+  .project-03-desc,
+  .project-05-desc,
+  .project-07-desc {
+    flex-direction: row;
+  }
+}
+
+.project-01-txt,
+.project-03-txt,
+.project-05-txt,
+.project-07-txt {
+  width: 55vw;
+  margin: 5vw;
+}
+@media screen and (min-width: 960px) {
+  .project-01-txt,
+  .project-03-txt,
+  .project-05-txt,
+  .project-07-txt {
+    width: 30vw;
+    margin-right: 10vw;
+  }
+}
+/* project奇数section */
+
+/* project偶数section */
+.project-02,
+.project-04,
+.project-06 {
+  background-color: #d4eef9;
+  position: relative;
+}
+.project-02-container,
+.project-04-container,
+.project-06-container {
+  padding: 150px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.project-02-ttl,
+.project-04-ttl,
+.project-06-ttl {
+  display: flex;
+  justify-content: end;
+  margin-left: 10vw;
+}
+.project-02-heading,
+.project-04-heading,
+.project-06-heading {
+  writing-mode: vertical-rl;
+  font-weight: 600;
+  text-align: center;
+}
+.project-02-desc,
+.project-04-desc,
+.project-06-desc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 960px) {
+  .project-02-desc,
+  .project-04-desc,
+  .project-06-desc {
+    flex-direction: row-reverse;
+  }
+}
+.project-02-txt,
+.project-04-txt,
+.project-06-txt {
+  width: 55vw;
+  margin: 5vw;
+}
+@media screen and (min-width: 960px) {
+  .project-02-txt,
+  .project-04-txt,
+  .project-06-txt {
+    width: 30vw;
+    margin-right: 10vw;
+  }
+}
+/* project偶数section */
+
+/* vocal(Project-01)セクション */
+
 .project-01-img-01 {
   position: relative;
   width: 10vw;
+  /* min-width: 66px; */
   max-width: 132px;
   height: 12.35vw;
   max-height: 163px;
   bottom: -65%;
   margin-right: 20px;
 }
-.project-01-heading {
-  writing-mode: vertical-rl;
-  font-weight: 600;
-}
-.project-01-desc {
-  display: flex;
-  align-items: center;
-}
-.project-01-img-02 {
-  position: relative;
-  width: 20vw;
-  max-width: 302px;
-  height: 13.3vw;
-  max-height: 201px;
-}
-.project-01-txt {
-  width: 30vw;
-  margin-left: 10vw;
-}
+
 .project-01-divider {
   position: absolute;
   bottom: 0;
@@ -404,27 +529,12 @@ html {
 }
 
 .project-01-divider .shape-fill {
-  fill: #D4EEF9;
+  fill: #d4eef9;
 }
 /* vocal(Project-01)セクション */
 
 /* SNS配信…(Project-02)セクション */
-.project-02 {
-  background-color: #D4EEF9;
-  position: relative;
-}
-.project-02-container {
-  padding: 150px 0;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-}
-.project-02-ttl {
-  display: flex;
-  justify-content: end;
-  margin-left: 10vw;
 
-}
 .project-02-img-01 {
   position: relative;
   width: 10vw;
@@ -433,26 +543,7 @@ html {
   max-height: 148px;
   bottom: -80%;
 }
-.project-02-heading {
-  writing-mode: vertical-rl;
-  font-weight: 600;
-}
-.project-02-desc {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-.project-02-img-02 {
-  position: relative;
-  width: 20vw;
-  max-width: 302px;
-  height: 13.3vw;
-  max-height: 201px;
-}
-.project-02-txt {
-  width: 30vw;
-  margin-right: 10vw;
-}
+
 .project-02-divider {
   position: absolute;
   bottom: 0;
@@ -471,26 +562,11 @@ html {
 }
 
 .project-02-divider .shape-fill {
-  fill: #FCFBF7;
+  fill: #fcfbf7;
 }
 /* SNS配信…(Project-02)セクション */
 
 /* apparel(Project-03)セクション */
-.project-03 {
-  background-color: #fcfbf7;
-  position: relative;
-}
-.project-03-container {
-  padding: 150px 0;
-  display: flex;
-  justify-content: center;
-}
-.project-03-ttl {
-  display: flex;
-  justify-content: end;
-  margin-right: 10vw;
-
-}
 .project-03-img-01 {
   position: relative;
   width: 10vw;
@@ -499,25 +575,7 @@ html {
   max-height: 114px;
   bottom: -80%;
 }
-.project-03-heading {
-  writing-mode: vertical-rl;
-  font-weight: 600;
-}
-.project-03-desc {
-  display: flex;
-  align-items: center;
-}
-.project-03-img-02 {
-  position: relative;
-  width: 20vw;
-  max-width: 302px;
-  height: 13.3vw;
-  max-height: 201px;
-}
-.project-03-txt {
-  width: 30vw;
-  margin-left: 10vw;
-}
+
 .project-03-divider {
   position: absolute;
   bottom: 0;
@@ -536,27 +594,11 @@ html {
 }
 
 .project-03-divider .shape-fill {
-  fill: #D4EEF9;
+  fill: #d4eef9;
 }
 /* apparel(project-03)セクション */
 
 /* コーチング…(Project-04)セクション */
-.project-04 {
-  background-color: #D4EEF9;
-  position: relative;
-}
-.project-04-container {
-  padding: 150px 0;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-}
-.project-04-ttl {
-  display: flex;
-  justify-content: end;
-  margin-left: 10vw;
-
-}
 .project-04-img-01 {
   position: relative;
   width: 10vw;
@@ -565,27 +607,7 @@ html {
   max-height: 97px;
   bottom: -80%;
 }
-.project-04-heading {
-  writing-mode: vertical-rl;
-  text-align: center;
-  font-weight: 600;
-}
-.project-04-desc {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-.project-04-img-02 {
-  position: relative;
-  width: 20vw;
-  max-width: 302px;
-  height: 13.3vw;
-  max-height: 201px;
-}
-.project-04-txt {
-  width: 30vw;
-  margin-right: 10vw;
-}
+
 .project-04-divider {
   position: absolute;
   bottom: 0;
@@ -604,27 +626,12 @@ html {
 }
 
 .project-04-divider .shape-fill {
-  fill: #FCFBF7;
+  fill: #fcfbf7;
 }
-
 /* コーチング…(Project-04)セクション */
 
 /* Webプロダクト(project-05)セクション */
-.project-05 {
-  background-color: #fcfbf7;
-  position: relative;
-}
-.project-05-container {
-  padding: 150px 0;
-  display: flex;
-  justify-content: center;
-}
-.project-05-ttl {
-  display: flex;
-  justify-content: end;
-  margin-right: 10vw;
 
-}
 .project-05-img-01 {
   position: relative;
   width: 10vw;
@@ -633,26 +640,7 @@ html {
   max-height: 114px;
   bottom: -80%;
 }
-.project-05-heading {
-  writing-mode: vertical-rl;
-  font-weight: 600;
-  text-align: center;
-}
-.project-05-desc {
-  display: flex;
-  align-items: center;
-}
-.project-05-img-02 {
-  position: relative;
-  width: 20vw;
-  max-width: 302px;
-  height: 13.3vw;
-  max-height: 201px;
-}
-.project-05-txt {
-  width: 30vw;
-  margin-left: 10vw;
-}
+
 .project-05-divider {
   position: absolute;
   bottom: 0;
@@ -671,27 +659,11 @@ html {
 }
 
 .project-05-divider .shape-fill {
-  fill: #D4EEF9;
+  fill: #d4eef9;
 }
 /* Webプロダクト(project-05)セクション */
 
 /* イベント企画…(project-06)セクション */
-.project-06 {
-  background-color: #D4EEF9;
-  position: relative;
-}
-.project-06-container {
-  padding: 150px 0;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-}
-.project-06-ttl {
-  display: flex;
-  justify-content: end;
-  margin-left: 10vw;
-
-}
 .project-06-img-01 {
   position: relative;
   width: 10vw;
@@ -700,26 +672,7 @@ html {
   max-height: 118px;
   bottom: -90%;
 }
-.project-06-heading {
-  writing-mode: vertical-rl;
-  font-weight: 600;
-}
-.project-06-desc {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-.project-06-img-02 {
-  position: relative;
-  width: 20vw;
-  max-width: 302px;
-  height: 13.3vw;
-  max-height: 201px;
-}
-.project-06-txt {
-  width: 30vw;
-  margin-right: 10vw;
-}
+
 .project-06-divider {
   position: absolute;
   bottom: 0;
@@ -738,27 +691,13 @@ html {
 }
 
 .project-06-divider .shape-fill {
-  fill: #FCFBF7;
+  fill: #fcfbf7;
 }
 
 /* イベント企画…(project-06)セクション */
 
 /* 仕入れ販売(project-07)セクション */
-.project-07 {
-  background-color: #fcfbf7;
-  position: relative;
-}
-.project-07-container {
-  padding: 150px 0;
-  display: flex;
-  justify-content: center;
-}
-.project-07-ttl {
-  display: flex;
-  justify-content: end;
-  margin-right: 10vw;
 
-}
 .project-07-img-01 {
   position: relative;
   width: 10vw;
@@ -767,26 +706,7 @@ html {
   max-height: 114px;
   bottom: -80%;
 }
-.project-07-heading {
-  writing-mode: vertical-rl;
-  font-weight: 600;
-  text-align: center;
-}
-.project-07-desc {
-  display: flex;
-  align-items: center;
-}
-.project-07-img-02 {
-  position: relative;
-  width: 20vw;
-  max-width: 302px;
-  height: 13.3vw;
-  max-height: 201px;
-}
-.project-07-txt {
-  width: 30vw;
-  margin-left: 10vw;
-}
+
 .project-07-divider {
   position: absolute;
   bottom: 0;
@@ -805,7 +725,7 @@ html {
 }
 
 .project-07-divider .shape-fill {
-  fill: #D4EEF9;
+  fill: #d4eef9;
 }
 /* 仕入れ販売(project-07)セクション */
 
@@ -888,28 +808,32 @@ html {
 }
 
 .company-divider .shape-fill {
-  fill: #FFFFFE;
+  fill: #fffffe;
 }
 
 /* 会社概要セクション */
 
 /* フッターセクション */
 .footer {
-  background-color: #FFFFFE;
+  background-color: #fffffe;
 }
 .footer-items {
   padding: 100px 0;
   display: flex;
   justify-content: center;
 }
+
 .footer-item-link {
   width: 50vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 960px) {
+  .footer-item-link {
+    flex-direction: row;
+  }
 }
 
 /* フッターセクション */
-
-
-
