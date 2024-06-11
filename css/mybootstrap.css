@@ -4,6 +4,13 @@
   margin: 0;
 }
 
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0); /* 背景を半透明に設定 */
+  z-index: 10; /* 他の要素の上に表示 */
+}
+
 .nav-link {
   color: #34807c;
 }
