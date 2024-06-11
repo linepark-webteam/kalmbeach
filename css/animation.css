@@ -56,7 +56,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,15 +68,15 @@
   width: 100vw;
   height: 100svh;
   opacity: 0;
-  animation: flickerIn 3s steps(8, end) forwards, hold 2s 3s forwards, fadeOut 3s 4s forwards;
+  animation: flickerIn 2s steps(8, end) forwards, hold 1s 2s forwards, fadeOut 2s 4s forwards;
 }
 
 /* フリッカーアニメーション */
 @keyframes flickerIn {
-  0%, 10%, 20%, 40%, 60%, 70%, 80%, 90%, 100% {
+  0%, 10%, 20%, 40%, 60%, 70%, 80%, 90% {
     opacity: 0;
   }
-  11%, 21%, 41%, 61%, 81%, 95% {
+  11%, 21%, 41%, 61%, 71%, 81%, 95% {
     opacity: 1;
   }
 }

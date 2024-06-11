@@ -99,6 +99,33 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// 無限スクロールメニュー
+document.addEventListener('DOMContentLoaded', function() {
+  const menuContent = document.querySelector('.menu-content');
+  const items = Array.from(menuContent.children);
+
+  // メニュー項目の複製を追加
+  items.forEach(item => {
+    const clone = item.cloneNode(true);
+    menuContent.appendChild(clone);
+  });
+
+  // GSAPを使ってスムーズなスクロールを実現
+  const totalWidth = menuContent.scrollWidth / 2;
+
+  function repeatScroll() {
+    gsap.fromTo(menuContent, 
+      { x: 0 }, 
+      {
+        x: -totalWidth,
+        ease: 'none',
+        duration: 30,
+        onComplete: repeatScroll
+      });
+  }
+
+  repeatScroll();
+});
 
 // イントロアニメーション
 document.addEventListener("DOMContentLoaded", function () {

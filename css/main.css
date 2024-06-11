@@ -14,10 +14,19 @@ html {
   background-image: url(../img/hero.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: top center;
   position: relative;
   width: 100%;
   height: 100svh;
   overflow: hidden;
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+  }
 }
 
 .hero-animation-item-01 {
@@ -57,18 +66,18 @@ html {
   .hero-animation-item-01 {
     bottom: 63%;
     left: 8%;
-    width: 10vw;
-    height: 12.347vw;
+    width: 7vw;
+    height: 8.644vw;
     max-width: 132px;
     max-height: 163px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-animation-item-01 {
-    bottom: 62%;
+    bottom: 60%;
     left: 12%;
-    width: 5vw;
-    height: 6.174vw;
+    width: 7vw;
+    height: 8.644vw;
     max-width: 132px;
     max-height: 163px;
   }
@@ -117,8 +126,8 @@ html {
   .hero-animation-item-02 {
     bottom: 67%;
     left: 40%;
-    width: 10vw;
-    height: 9.58vw;
+    width: 7vw;
+    height: 6.706vw;
     max-width: 119px;
     max-height: 114px;
   }
@@ -127,8 +136,8 @@ html {
   .hero-animation-item-02 {
     bottom: 66%;
     left: 45%;
-    width: 10vw;
-    height: 9.58vw;
+    width: 7vw;
+    height: 6.706vw;
     max-width: 119px;
     max-height: 114px;
   }
@@ -185,8 +194,8 @@ html {
 }
 @media screen and (min-width: 1280px) {
   .hero-animation-item-03 {
-    bottom: 75%;
-    left: 58%;
+    bottom: 78%;
+    left: 53%;
     width: 8vw;
     height: 9.255vw;
     max-width: 90px;
@@ -237,8 +246,8 @@ html {
   .hero-animation-item-04 {
     bottom: 68%;
     left: 63%;
-    width: 14vw;
-    height: 13.709vw;
+    width: 12vw;
+    height: 11.751vw;
     max-width: 193px;
     max-height: 189px;
   }
@@ -246,9 +255,9 @@ html {
 @media screen and (min-width: 1280px) {
   .hero-animation-item-04 {
     bottom: 65%;
-    left: 67%;
-    width: 14vw;
-    height: 13.709vw;
+    left: 62%;
+    width: 12vw;
+    height: 11.751vw;
     max-width: 193px;
     max-height: 189px;
   }
@@ -297,18 +306,18 @@ html {
   .hero-animation-item-05 {
     bottom: 50%;
     left: 70%;
-    width: 8vw;
-    height: 10.571vw;
+    width: 7vw;
+    height: 9.25vw;
     max-width: 112px;
     max-height: 148px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-animation-item-05 {
-    bottom: 45%;
-    left: 75%;
-    width: 8vw;
-    height: 10.571vw;
+    bottom: 35%;
+    left: 70%;
+    width: 6vw;
+    height: 7.929vw;
     max-width: 112px;
     max-height: 148px;
   }
@@ -365,15 +374,14 @@ html {
 }
 @media screen and (min-width: 1280px) {
   .hero-animation-item-06 {
-    bottom: 60%;
-    left: 85%;
-    width: 8vw;
-    height: 7.534vw;
+    bottom: 56%;
+    left: 78%;
+    width: 6vw;
+    height: 5.65vw;
     max-width: 103px;
     max-height: 97px;
   }
 }
-
 
 .hero-animation-item-07 {
   position: absolute;
@@ -426,7 +434,7 @@ html {
 }
 @media screen and (min-width: 1280px) {
   .hero-animation-item-07 {
-    bottom: 52%;
+    bottom: 48%;
     left: 40%;
     width: 10vw;
     height: 9.81vw;
@@ -487,8 +495,8 @@ html {
 }
 @media screen and (min-width: 1280px) {
   .hero-item-01 {
-    bottom: 55%;
-    left: 28%;
+    bottom: 52%;
+    left: 24%;
     width: 5vw;
     height: 4.118vw;
     max-width: 34px;
@@ -547,8 +555,8 @@ html {
 }
 @media screen and (min-width: 1280px) {
   .hero-item-02 {
-    bottom: 60%;
-    left: 34%;
+    bottom: 56%;
+    left: 32%;
     width: 5vw;
     height: 4.79vw;
     max-width: 54px;
@@ -606,8 +614,8 @@ html {
 }
 @media screen and (min-width: 1280px) {
   .hero-item-03 {
-    bottom: 80%;
-    left: 40%;
+    bottom: 85%;
+    left: 36%;
     width: 5vw;
     height: 3.857vw;
     max-width: 35px;
@@ -666,8 +674,8 @@ html {
 }
 @media screen and (min-width: 1280px) {
   .hero-item-04 {
-    bottom: 58%;
-    left: 58%;
+    bottom: 55%;
+    left: 55%;
     width: 5vw;
     height: 4.878vw;
     max-width: 41px;
@@ -718,8 +726,8 @@ html {
   .hero-item-05 {
     bottom: 75%;
     left: 88%;
-    width: 6vw;
-    height: 8.657vw;
+    width: 4vw;
+    height: 5.771vw;
     max-width: 70px;
     max-height: 101px;
   }
@@ -727,43 +735,58 @@ html {
 @media screen and (min-width: 1280px) {
   .hero-item-05 {
     bottom: 75%;
-    left: 90%;
-    width: 8vw;
-    height: 11.543vw;
+    left: 81%;
+    width: 4vw;
+    height: 5.771vw;
     max-width: 70px;
     max-height: 101px;
   }
 }
 
+/* hero タイトルロゴ */
+.site-ttl {
+  overflow: hidden;
+  width: 100vw;
+  position: absolute;
+  bottom: 20%;
+}
+.site-ttl-content {
+  display: flex;
+  justify-content: center;
+}
+/* hero タイトルロゴ */
+
 /* 無限スクロールメニュー */
 .scrolling-menu {
   overflow: hidden;
-  width: 100vw; /* 全幅 */
+  width: 100vw;
   box-sizing: border-box;
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
 }
 
 .menu-content {
   display: flex;
   white-space: nowrap;
-  animation: scrollLeft 15s linear infinite;
 }
 
 .menu-item {
   flex: 0 0 auto;
   font-weight: 600;
-  font-size: calc((100vw - 320px) / 140 + 8px);
-  width: 40vw;
+  font-size: calc((100vw - 320px) / 140 + 12px);
+  width: 44vw;
   max-width: 300px;
   background-color: transparent;
   border: none;
   margin: 0 10px;
   padding: 0;
 }
+
 @media screen and (min-width: 960px) {
   .menu-item {
-    width: 25vw;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 30vw;
     max-width: 300px;
     margin: 0 15px;
   }
@@ -771,7 +794,7 @@ html {
 
 .menu-item a {
   display: block;
-  padding: 10px 20px;
+  padding: 10px 10px;
   background-color: #f2f2f295;
   color: #34807c;
   border-radius: 20px;
@@ -783,15 +806,6 @@ html {
 
 .menu-item:focus {
   outline: none;
-}
-
-@keyframes scrollLeft {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
 }
 /* 無限スクロールメニュー */
 
@@ -809,7 +823,12 @@ html {
   position: relative;
   display: block;
   width: calc(122% + 1.3px);
-  height: 33px;
+  height: 25px;
+}
+@media screen and (min-width: 960px) {
+  .hero-divider svg {
+    height: 33px;
+  }
 }
 
 .hero-divider .shape-fill {
@@ -850,6 +869,7 @@ html {
 
 .about-ttl {
   margin-top: 5svh;
+  font-weight: normal;
 }
 
 .about-txt {
@@ -863,12 +883,17 @@ html {
 
 .about-item-img-left {
   position: absolute;
-  width: 15vw;
+  width: 25vw;
   left: 0;
   bottom: 0;
-  /* opacity: 0.5; */
   z-index: 3;
 }
+@media screen and (min-width: 718px) {
+  .about-item-img-left {
+    width: 15vw;
+  }
+}
+
 .about-item-img-right {
   display: none;
 }
@@ -883,8 +908,6 @@ html {
     z-index: 3;
   }
 }
-
-
 
 .about .content {
   position: relative;
@@ -904,7 +927,12 @@ html {
   position: relative;
   display: block;
   width: calc(122% + 1.3px);
-  height: 41px;
+  height: 20px;
+}
+@media screen and (min-width: 960px) {
+  .about-divider svg {
+    height: 41px;
+  }
 }
 
 .about-divider .shape-fill {
@@ -936,10 +964,19 @@ html {
   margin: 0 100px;
 }
 .project-item-img-simbol {
-  width: 20vw;
+  width: 30vw;
   max-width: 202px;
 }
-
+@media screen and (min-width: 960px) {
+  .project-item-img-simbol {
+    width: 20vw;
+    max-width: 202px;
+  }
+}
+.project-ttl {
+  margin-top: 5svh;
+  font-weight: normal;
+}
 .project-item-txt {
   width: 80%;
   max-width: 800px;
@@ -977,7 +1014,12 @@ html {
   position: relative;
   display: block;
   width: calc(122% + 1.3px);
-  height: 41px;
+  height: 25px;
+}
+@media screen and (min-width: 960px) {
+  .project-divider svg {
+    height: 41px;
+  }
 }
 
 .project-divider .shape-fill {
@@ -1036,8 +1078,18 @@ html {
 .project-05-ttl,
 .project-07-ttl {
   display: flex;
-  justify-content: end;
-  margin-right: 10vw;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  margin-right: 6%;
+}
+@media screen and (min-width: 960px) {
+  .project-01-ttl,
+  .project-03-ttl,
+  .project-05-ttl,
+  .project-07-ttl {
+    justify-content: end;
+    flex-direction: row;
+  }
 }
 .project-01-heading,
 .project-03-heading,
@@ -1101,8 +1153,17 @@ html {
 .project-04-ttl,
 .project-06-ttl {
   display: flex;
-  justify-content: end;
-  margin-left: 10vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 6%;
+}
+@media screen and (min-width: 960px) {
+  .project-02-ttl,
+  .project-04-ttl,
+  .project-06-ttl  {
+    justify-content: end;
+    flex-direction: row;
+  }
 }
 .project-02-heading,
 .project-04-heading,
@@ -1142,7 +1203,6 @@ html {
 /* project偶数section */
 
 /* vocal(Project-01)セクション */
-
 .project-01-img-01 {
   position: relative;
   width: 10vw;
@@ -1150,8 +1210,13 @@ html {
   max-width: 132px;
   height: 12.35vw;
   max-height: 163px;
-  bottom: -65%;
-  margin-right: 20px;
+  margin-right: 0;
+}
+@media screen and (min-width: 960px) {
+  .project-01-img-01 {
+    margin-right: 20px;
+    bottom: -65%;
+  }
 }
 
 .project-01-divider {
@@ -1168,7 +1233,12 @@ html {
   position: relative;
   display: block;
   width: calc(126% + 1.3px);
-  height: 70px;
+  height: 30px;
+}
+@media screen and (min-width: 960px) {
+  .project-01-divider svg {
+    height: 70px;
+  }
 }
 
 .project-01-divider .shape-fill {
@@ -1181,10 +1251,15 @@ html {
 .project-02-img-01 {
   position: relative;
   width: 10vw;
-  max-width: 112px;
   height: 13.21vw;
+  max-width: 112px;
   max-height: 148px;
-  bottom: -80%;
+  bottom: 0%;
+}
+@media screen and (min-width: 960px) {
+  .project-02-img-01 {
+    bottom: -80%;
+  }
 }
 
 .project-02-divider {
@@ -1201,7 +1276,12 @@ html {
   position: relative;
   display: block;
   width: calc(104% + 1.3px);
-  height: 31px;
+  height: 28px;
+}
+@media screen and (min-width: 960px) {
+  .project-02-divider svg {
+    height: 31px;
+  }
 }
 
 .project-02-divider .shape-fill {
@@ -1213,10 +1293,15 @@ html {
 .project-03-img-01 {
   position: relative;
   width: 10vw;
-  max-width: 119px;
   height: 9.58vw;
+  max-width: 119px;
   max-height: 114px;
-  bottom: -80%;
+  bottom: 0;
+}
+@media screen and (min-width: 960px) {
+  .project-03-img-01 {
+    bottom: -80%;
+  }
 }
 
 .project-03-divider {
@@ -1233,7 +1318,12 @@ html {
   position: relative;
   display: block;
   width: calc(126% + 1.3px);
-  height: 70px;
+  height: 35px;
+}
+@media screen and (min-width: 960px) {
+  .project-03-divider svg {
+    height: 70px;
+  }
 }
 
 .project-03-divider .shape-fill {
@@ -1245,10 +1335,15 @@ html {
 .project-04-img-01 {
   position: relative;
   width: 10vw;
-  max-width: 103px;
   height: 9.42vw;
+  max-width: 103px;
   max-height: 97px;
-  bottom: -80%;
+  bottom: 0;
+}
+@media screen and (min-width: 960px) {
+  .project-04-img-01 {
+    bottom: -80%;
+  }
 }
 
 .project-04-divider {
@@ -1265,7 +1360,12 @@ html {
   position: relative;
   display: block;
   width: calc(104% + 1.3px);
-  height: 31px;
+  height: 25px;
+}
+@media screen and (min-width: 960px) {
+  .project-04-divider svg {
+    height: 31px;
+  }
 }
 
 .project-04-divider .shape-fill {
@@ -1274,14 +1374,18 @@ html {
 /* コーチング…(Project-04)セクション */
 
 /* Webプロダクト(project-05)セクション */
-
 .project-05-img-01 {
   position: relative;
   width: 10vw;
-  max-width: 119px;
   height: 9.58vw;
+  max-width: 119px;
   max-height: 114px;
-  bottom: -80%;
+  bottom: 0;
+}
+@media screen and (min-width: 960px) {
+  .project-05-img-01 {
+    bottom: -80%;
+  }
 }
 
 .project-05-divider {
@@ -1298,7 +1402,12 @@ html {
   position: relative;
   display: block;
   width: calc(126% + 1.3px);
-  height: 70px;
+  height: 30px;
+}
+@media screen and (min-width: 960px) {
+  .project-05-divider svg {
+    height: 70px;
+  }
 }
 
 .project-05-divider .shape-fill {
@@ -1313,7 +1422,12 @@ html {
   max-width: 102px;
   height: 11.57vw;
   max-height: 118px;
-  bottom: -90%;
+  bottom: 0 ;
+}
+@media screen and (min-width: 960px) {
+  .project-06-img-01 {
+    bottom: -90%;
+  }
 }
 
 .project-06-divider {
@@ -1330,24 +1444,32 @@ html {
   position: relative;
   display: block;
   width: calc(104% + 1.3px);
-  height: 31px;
+  height: 25px;
+}
+@media screen and (min-width: 960px) {
+  .project-06-divider svg {
+    height: 31px;
+  }
 }
 
 .project-06-divider .shape-fill {
   fill: #fcfbf7;
 }
-
 /* イベント企画…(project-06)セクション */
 
 /* 仕入れ販売(project-07)セクション */
-
 .project-07-img-01 {
   position: relative;
   width: 10vw;
-  max-width: 119px;
   height: 9.58vw;
+  max-width: 119px;
   max-height: 114px;
-  bottom: -80%;
+  bottom: 0%;
+}
+@media screen and (min-width: 960px) {
+  .project-07-img-01 {
+    bottom: -80%;
+  }
 }
 
 .project-07-divider {
@@ -1364,7 +1486,12 @@ html {
   position: relative;
   display: block;
   width: calc(126% + 1.3px);
-  height: 70px;
+  height: 30px;
+}
+@media screen and (min-width: 960px) {
+  .project-07-divider svg {
+    height: 70px;
+  }
 }
 
 .project-07-divider .shape-fill {
@@ -1375,19 +1502,17 @@ html {
 /* 会社概要セクション */
 .company {
   position: relative;
-  /* padding: 0; */
   width: 100%;
   min-height: 50svh;
   text-align: center;
   background-color: #d4eef9;
   z-index: 2;
-  margin-top: -10px;
 }
 
 .company-container {
   display: flex;
   justify-content: space-between;
-  padding: 10svh 0;
+  padding: 5svh 0;
   position: relative;
   width: 100%;
 }
@@ -1426,7 +1551,6 @@ html {
     bottom: -10svh;
   }
 }
-
 
 .company-item-desc {
   width: 90%;
@@ -1501,7 +1625,12 @@ html {
   position: relative;
   display: block;
   width: calc(110% + 1.3px);
-  height: 50px;
+  height: 25px;
+}
+@media screen and (min-width: 960px) {
+  .company-divider svg {
+    height: 50px;
+  }
 }
 
 .company-divider .shape-fill {
