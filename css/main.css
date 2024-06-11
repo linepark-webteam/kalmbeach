@@ -22,8 +22,8 @@ html {
 
 .hero-animation-item-01 {
   position: absolute;
-  bottom: 68%;
-  left: 10%;
+  bottom: 62%;
+  left: 8%;
   width: 15vw;
   height: 18.52vw;
   max-width: 132px;
@@ -55,18 +55,20 @@ html {
 }
 @media screen and (min-width: 960px) {
   .hero-animation-item-01 {
-    bottom: 65%;
-    left: 20%;
-    width: 8vw;
-    height: 9.879vw;
+    bottom: 63%;
+    left: 8%;
+    width: 10vw;
+    height: 12.347vw;
+    max-width: 132px;
+    max-height: 163px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-animation-item-01 {
-    bottom: 55%;
-    left: 20%;
+    bottom: 62%;
+    left: 12%;
     width: 5vw;
-    height: 6.175vw;
+    height: 6.174vw;
     max-width: 132px;
     max-height: 163px;
   }
@@ -74,8 +76,8 @@ html {
 
 .hero-animation-item-02 {
   position: absolute;
-  bottom: 60%;
-  left: 45%;
+  bottom: 65%;
+  left: 42%;
   width: 15vw;
   height: 14.37vw;
   max-width: 119px;
@@ -113,20 +115,20 @@ html {
 }
 @media screen and (min-width: 960px) {
   .hero-animation-item-02 {
-    bottom: 75%;
-    left: 45%;
-    width: 8vw;
-    height: 7.664vw;
+    bottom: 67%;
+    left: 40%;
+    width: 10vw;
+    height: 9.58vw;
     max-width: 119px;
     max-height: 114px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-animation-item-02 {
-    bottom: 65%;
+    bottom: 66%;
     left: 45%;
-    width: 5vw;
-    height: 4.79vw;
+    width: 10vw;
+    height: 9.58vw;
     max-width: 119px;
     max-height: 114px;
   }
@@ -134,8 +136,8 @@ html {
 
 .hero-animation-item-03 {
   position: absolute;
-  bottom: 80%;
-  left: 55%;
+  bottom: 75%;
+  left: 58%;
   width: 10vw;
   height: 11.569vw;
   max-width: 90px;
@@ -173,8 +175,8 @@ html {
 }
 @media screen and (min-width: 960px) {
   .hero-animation-item-03 {
-    bottom: 80%;
-    left: 55%;
+    bottom: 75%;
+    left: 52%;
     width: 8vw;
     height: 9.255vw;
     max-width: 90px;
@@ -184,9 +186,9 @@ html {
 @media screen and (min-width: 1280px) {
   .hero-animation-item-03 {
     bottom: 75%;
-    left: 55%;
-    width: 5vw;
-    height: 5.784vw;
+    left: 58%;
+    width: 8vw;
+    height: 9.255vw;
     max-width: 90px;
     max-height: 110px;
   }
@@ -194,10 +196,10 @@ html {
 
 .hero-animation-item-04 {
   position: absolute;
-  bottom: 75%;
+  bottom: 68%;
   left: 65%;
-  width: 12vw;
-  height: 11.751vw;
+  width: 16vw;
+  height: 15.668vw;
   max-width: 193px;
   max-height: 189px;
 }
@@ -233,20 +235,20 @@ html {
 }
 @media screen and (min-width: 960px) {
   .hero-animation-item-04 {
-    bottom: 75%;
-    left: 65%;
-    width: 12vw;
-    height: 11.751vw;
+    bottom: 68%;
+    left: 63%;
+    width: 14vw;
+    height: 13.709vw;
     max-width: 193px;
     max-height: 189px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-animation-item-04 {
-    bottom: 70%;
-    left: 65%;
-    width: 5vw;
-    height: 4.896vw;
+    bottom: 65%;
+    left: 67%;
+    width: 14vw;
+    height: 13.709vw;
     max-width: 193px;
     max-height: 189px;
   }
@@ -254,8 +256,8 @@ html {
 
 .hero-animation-item-05 {
   position: absolute;
-  bottom: 70%;
-  left: 68%;
+  bottom: 50%;
+  left: 65%;
   width: 10vw;
   height: 13.214vw;
   max-width: 112px;
@@ -283,7 +285,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .hero-animation-item-05 {
-    bottom: 60%;
+    bottom: 50%;
     left: 60%;
     width: 8vw;
     height: 10.571vw;
@@ -293,8 +295,8 @@ html {
 }
 @media screen and (min-width: 960px) {
   .hero-animation-item-05 {
-    bottom: 55%;
-    left: 68%;
+    bottom: 50%;
+    left: 70%;
     width: 8vw;
     height: 10.571vw;
     max-width: 112px;
@@ -303,10 +305,10 @@ html {
 }
 @media screen and (min-width: 1280px) {
   .hero-animation-item-05 {
-    bottom: 33%;
-    left: 68%;
-    width: 5vw;
-    height: 6.61vw;
+    bottom: 45%;
+    left: 75%;
+    width: 8vw;
+    height: 10.571vw;
     max-width: 112px;
     max-height: 148px;
   }
@@ -314,8 +316,8 @@ html {
 
 .hero-animation-item-06 {
   position: absolute;
-  bottom: 70%;
-  left: 75%;
+  bottom: 63%;
+  left: 80%;
   width: 10vw;
   height: 9.417vw;
   max-width: 103px;
@@ -343,7 +345,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   .hero-animation-item-06 {
-    bottom: 65%;
+    bottom: 63%;
     left: 75%;
     width: 8vw;
     height: 7.534vw;
@@ -353,8 +355,8 @@ html {
 }
 @media screen and (min-width: 960px) {
   .hero-animation-item-06 {
-    bottom: 65%;
-    left: 78%;
+    bottom: 63%;
+    left: 80%;
     width: 8vw;
     height: 7.534vw;
     max-width: 103px;
@@ -363,10 +365,10 @@ html {
 }
 @media screen and (min-width: 1280px) {
   .hero-animation-item-06 {
-    bottom: 50%;
-    left: 75%;
-    width: 5vw;
-    height: 4.71vw;
+    bottom: 60%;
+    left: 85%;
+    width: 8vw;
+    height: 7.534vw;
     max-width: 103px;
     max-height: 97px;
   }
@@ -375,9 +377,10 @@ html {
 
 .hero-animation-item-07 {
   position: absolute;
-  bottom: 40%;
-  left: 40%;
-  width: 5vw;
+  bottom: 52%;
+  left: 28%;
+  width: 10vw;
+  height: 9.81vw;
   max-width: 105px;
   max-height: 103px;
 }
@@ -403,9 +406,9 @@ html {
 }
 @media screen and (min-width: 768px) {
   .hero-animation-item-07 {
-    bottom: 60%;
-    left: 35%;
-    width: 8vw;
+    bottom: 51%;
+    left: 30%;
+    width: 10vw;
     height: 9.81vw;
     max-width: 105px;
     max-height: 103px;
@@ -413,20 +416,20 @@ html {
 }
 @media screen and (min-width: 960px) {
   .hero-animation-item-07 {
-    bottom: 58%;
-    left: 40%;
-    width: 8vw;
-    height: 7.664vw;
+    bottom: 48%;
+    left: 28%;
+    width: 10vw;
+    height: 9.81vw;
     max-width: 105px;
     max-height: 103px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-animation-item-07 {
-    bottom: 40%;
+    bottom: 52%;
     left: 40%;
-    width: 5vw;
-    height: 4.79vw;
+    width: 10vw;
+    height: 9.81vw;
     max-width: 105px;
     max-height: 103px;
   }
@@ -435,8 +438,8 @@ html {
 /* 浜辺のアイテム */
 .hero-item-01 {
   position: absolute;
-  bottom: 43%;
-  left: 27%;
+  bottom: 55%;
+  left: 20%;
   width: 5vw;
   height: 4.118vw;
   max-width: 34px;
@@ -464,8 +467,8 @@ html {
 }
 @media screen and (min-width: 768px) {
   .hero-item-01 {
-    bottom: 60%;
-    left: 35%;
+    bottom: 55%;
+    left: 18%;
     width: 5vw;
     height: 4.118vw;
     max-width: 34px;
@@ -474,8 +477,8 @@ html {
 }
 @media screen and (min-width: 960px) {
   .hero-item-01 {
-    bottom: 58%;
-    left: 40%;
+    bottom: 54%;
+    left: 20%;
     width: 5vw;
     height: 4.118vw;
     max-width: 34px;
@@ -484,8 +487,8 @@ html {
 }
 @media screen and (min-width: 1280px) {
   .hero-item-01 {
-    bottom: 40%;
-    left: 40%;
+    bottom: 55%;
+    left: 28%;
     width: 5vw;
     height: 4.118vw;
     max-width: 34px;
@@ -495,8 +498,8 @@ html {
 
 .hero-item-02 {
   position: absolute;
-  bottom: 48%;
-  left: 34%;
+  bottom: 58%;
+  left: 28%;
   width: 8vw;
   height: 8.148vw;
   max-width: 54px;
@@ -524,10 +527,10 @@ html {
 }
 @media screen and (min-width: 768px) {
   .hero-item-02 {
-    bottom: 60%;
-    left: 35%;
+    bottom: 58%;
+    left: 24%;
     width: 8vw;
-    height: 7.664vw;
+    height: 8.148vw;
     max-width: 54px;
     max-height: 55px;
   }
@@ -535,7 +538,7 @@ html {
 @media screen and (min-width: 960px) {
   .hero-item-02 {
     bottom: 58%;
-    left: 40%;
+    left: 26%;
     width: 8vw;
     height: 7.664vw;
     max-width: 54px;
@@ -544,8 +547,8 @@ html {
 }
 @media screen and (min-width: 1280px) {
   .hero-item-02 {
-    bottom: 40%;
-    left: 40%;
+    bottom: 60%;
+    left: 34%;
     width: 5vw;
     height: 4.79vw;
     max-width: 54px;
@@ -583,18 +586,18 @@ html {
 }
 @media screen and (min-width: 768px) {
   .hero-item-03 {
-    bottom: 60%;
-    left: 35%;
-    width: 5vw;
-    height: 3.857vw;
+    bottom: 80%;
+    left: 30%;
+    width: 3vw;
+    height: 2.314vw;
     max-width: 35px;
     max-height: 27px;
   }
 }
 @media screen and (min-width: 960px) {
   .hero-item-03 {
-    bottom: 58%;
-    left: 40%;
+    bottom: 77%;
+    left: 33%;
     width: 5vw;
     height: 3.857vw;
     max-width: 35px;
@@ -603,7 +606,7 @@ html {
 }
 @media screen and (min-width: 1280px) {
   .hero-item-03 {
-    bottom: 40%;
+    bottom: 80%;
     left: 40%;
     width: 5vw;
     height: 3.857vw;
@@ -614,8 +617,8 @@ html {
 
 .hero-item-04 {
   position: absolute;
-  bottom: 50%;
-  left: 55%;
+  bottom: 60%;
+  left: 60%;
   width: 5vw;
   height: 4.88vw;
   max-width: 41px;
@@ -644,9 +647,9 @@ html {
 @media screen and (min-width: 768px) {
   .hero-item-04 {
     bottom: 60%;
-    left: 35%;
-    width: 5vw;
-    height: 4.878vw;
+    left: 55%;
+    width: 3vw;
+    height: 2.927vw;
     max-width: 41px;
     max-height: 40px;
   }
@@ -654,7 +657,7 @@ html {
 @media screen and (min-width: 960px) {
   .hero-item-04 {
     bottom: 58%;
-    left: 40%;
+    left: 56%;
     width: 5vw;
     height: 4.878vw;
     max-width: 41px;
@@ -663,8 +666,8 @@ html {
 }
 @media screen and (min-width: 1280px) {
   .hero-item-04 {
-    bottom: 40%;
-    left: 40%;
+    bottom: 58%;
+    left: 58%;
     width: 5vw;
     height: 4.878vw;
     max-width: 41px;
@@ -674,10 +677,10 @@ html {
 
 .hero-item-05 {
   position: absolute;
-  bottom: 68%;
-  left: 80%;
-  width: 5vw;
-  height: 7.21vw;
+  bottom: 75%;
+  left: 85%;
+  width: 8vw;
+  height: 11.543vw;
   max-width: 70px;
   max-height: 101px;
 }
@@ -703,28 +706,28 @@ html {
 }
 @media screen and (min-width: 768px) {
   .hero-item-05 {
-    bottom: 60%;
-    left: 35%;
-    width: 8vw;
-    height: 11.543vw;
+    bottom: 80%;
+    left: 85%;
+    width: 6vw;
+    height: 8.657vw;
     max-width: 70px;
     max-height: 101px;
   }
 }
 @media screen and (min-width: 960px) {
   .hero-item-05 {
-    bottom: 58%;
-    left: 40%;
-    width: 8vw;
-    height: 11.543vw;
+    bottom: 75%;
+    left: 88%;
+    width: 6vw;
+    height: 8.657vw;
     max-width: 70px;
     max-height: 101px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-item-05 {
-    bottom: 40%;
-    left: 40%;
+    bottom: 75%;
+    left: 90%;
     width: 8vw;
     height: 11.543vw;
     max-width: 70px;
@@ -744,17 +747,26 @@ html {
 .menu-content {
   display: flex;
   white-space: nowrap;
-  animation: scrollLeft 30s linear infinite;
+  animation: scrollLeft 15s linear infinite;
 }
 
 .menu-item {
   flex: 0 0 auto;
-  width: 25vw;
+  font-weight: 600;
+  font-size: calc((100vw - 320px) / 140 + 8px);
+  width: 40vw;
   max-width: 300px;
   background-color: transparent;
   border: none;
-  margin: 0 15px;
+  margin: 0 10px;
   padding: 0;
+}
+@media screen and (min-width: 960px) {
+  .menu-item {
+    width: 25vw;
+    max-width: 300px;
+    margin: 0 15px;
+  }
 }
 
 .menu-item a {
