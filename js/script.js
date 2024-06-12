@@ -1,3 +1,21 @@
+// ナビゲーションの表示・非表示
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelector('.nav-links');
+  const heroSection = document.querySelector('.hero');
+
+  function handleScroll() {
+    const heroSectionBottom = heroSection.offsetTop + heroSection.offsetHeight;
+
+    if (window.scrollY > heroSectionBottom) {
+      navLinks.style.display = 'block';  // ヒーローセクションの終わりを超えたら表示
+    } else {
+      navLinks.style.display = 'none';  // ヒーローセクションの範囲内またはそれより上なら非表示
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll);
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   init();
 

@@ -9,6 +9,44 @@ html {
     "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
+/* nav */
+.logo-container {
+  width: 20vw;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand-logo {
+  width: 10vw;
+}
+@media screen and (min-width: 960px) {
+  .navbar-brand-logo{
+    max-width: 59px;
+    max-height: 69px;
+  }
+}
+
+.navbar-brand-heading {
+  width: 30vw;
+}
+@media screen and (min-width: 960px) {
+  .navbar-brand-heading {
+    max-width: 207px;
+    max-height: 49px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+      flex-direction: row;
+      margin-right: 3vw !important;
+  }
+}
+
+.nav-links {
+  display: none;
+}
+
+
 /* heroセクション */
 .hero {
   background-image: url(../img/hero.png);
@@ -1660,6 +1698,12 @@ html {
   .footer-item-link {
     flex-direction: row;
   }
+}
+.copy {
+  text-align: center;
+}
+.copy small {
+  padding: 20px 0;
 }
 
 /* フッターセクション */
