@@ -16,6 +16,39 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener('scroll', handleScroll);
 });
 
+// TOPへ戻るボタン
+document.addEventListener('DOMContentLoaded', function() {
+  const backToTopButton = document.getElementById('back-to-top');
+  const heroSection = document.querySelector('.hero');
+  const heroSectionStart = heroSection.offsetTop; // ヒーローセクションの開始位置
+  const heroSectionEnd = heroSectionStart + heroSection.offsetHeight; // ヒーローセクションの終了位置
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > heroSectionEnd) {
+      // ヒーローセクションを超えた場合、トップへ戻る画像を表示
+      backToTopButton.src = '../img/totop.png';
+      backToTopButton.alt = "Back to top";
+      backToTopButton.style.display = 'block';
+    } else if (window.scrollY >= heroSectionStart) {
+      // ヒーローセクション内ではヒーローセクション用の画像を表示
+      backToTopButton.src = '../img/toscroll.png';
+      backToTopButton.alt = "Scroll down";
+      backToTopButton.style.display = 'block';
+    } else {
+      // ヒーローセクションの開始より上では表示しない
+      backToTopButton.style.display = 'none';
+    }
+  });
+
+  backToTopButton.addEventListener('click', function() {
+    if (window.scrollY > heroSectionEnd) {
+      // トップへ戻る機能
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
   init();
 
