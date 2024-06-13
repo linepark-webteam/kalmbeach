@@ -6,6 +6,7 @@ html {
   padding: 0;
   overflow-x: hidden;
   color: #f1eed3;
+  font-size: 1.2rem;
   font-family: "Montserrat", "游ゴシック体", YuGothic, "游ゴシック Medium",
     "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
