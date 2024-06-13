@@ -45,17 +45,78 @@ html {
 .nav-links {
   display: none;
 }
-
-/* TOPへ戻るボタン */
-#back-to-top {
+/* ハンバーガーメニューボタン固定 */
+.navbar-toggler {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  cursor: pointer;
-  display: none; /* 初期状態では非表示 */
-  z-index: 1000;
-  width: 80px; /* 適切なサイズに調整 */
-  height: auto;
+  top: 20px; /* 上からの位置 */
+  right: 20px; /* 右からの位置 */
+  z-index: 1050; /* 必要に応じて調整 */
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* ハンバーガーメニューボタン */
+.navbar-toggler {
+  position: fixed;
+  top: 20px; /* 上からの位置 */
+  right: 20px; /* 右からの位置 */
+  z-index: 1050; /* 他の要素より前面に表示 */
+  width: 50px; /* ボタンの幅 */
+  height: 50px; /* ボタンの高さ */
+  border: none;
+  border-radius: 50%; /* ボタンを円形に */
+  background-color: #4caf50; /* 緑色の背景 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3); /* 影を追加 */
+}
+
+/* ハンバーガーメニューボタン */
+.navbar-toggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px; /* 任意のサイズに調整 */
+  height: 60px; /* 任意のサイズに調整 */
+  background-color: #4CAF50; /* ボタンの背景色 */
+  border: none; /* ボーダーを非表示に */
+  border-radius: 50%; /* 円形に */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影を追加 */
+  color: white; /* アイコンの色 */
+  font-size: 16px; /* テキストのサイズ */
+  cursor: pointer; /* カーソルをポインタに */
+}
+
+.navbar-toggler:hover {
+  background-color: #3e8e41; /* ホバー時の背景色 */
+}
+
+.navbar-toggler-icon {
+  display: block;
+  width: 30px; /* アイコンの幅 */
+  height: 2px; /* アイコンの高さ */
+  background-color: currentColor; /* アイコンの色をボタンの色に合わせる */
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 100%; /* アイコンと同じ幅 */
+  height: 2px; /* アイコンと同じ高さ */
+  background-color: currentColor; /* アイコンと同じ色 */
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px; /* 上のバーの位置 */
+}
+
+.navbar-toggler-icon::after {
+  top: 8px; /* 下のバーの位置 */
 }
 
 /* heroセクション */

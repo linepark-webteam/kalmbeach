@@ -60,15 +60,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: inherit;
+  background-color: #181B22;
   z-index: 1000;
 }
 
 #opening-image {
   width: 100vw;
-  height: 100svh;
+  height: auto;
   opacity: 0;
-  animation: flickerIn 2s steps(8, end) forwards, hold 1s 2s forwards, fadeOut 2s 4s forwards;
+  animation: flickerIn 2s steps(8, end) forwards, hold 1s 2s forwards, fadeOut 2s 3s forwards;
+}
+@media screen and (min-width: 960px) {
+  #opening-image {
+    width: 100vw;
+    height: 100svh;
+    opacity: 0;
+  }
 }
 
 /* フリッカーアニメーション */

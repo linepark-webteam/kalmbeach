@@ -20,35 +20,48 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('DOMContentLoaded', function() {
   const backToTopButton = document.getElementById('back-to-top');
   const heroSection = document.querySelector('.hero');
-  const heroSectionStart = heroSection.offsetTop; // ヒーローセクションの開始位置
-  const heroSectionEnd = heroSectionStart + heroSection.offsetHeight; // ヒーローセクションの終了位置
+  let heroSectionEnd; // ヒーローセクションの終了位置を動的に管理
 
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > heroSectionEnd) {
-      // ヒーローセクションを超えた場合、トップへ戻る画像を表示
-      backToTopButton.src = '../img/totop.png';
-      backToTopButton.alt = "Back to top";
-      backToTopButton.style.display = 'block';
-    } else if (window.scrollY >= heroSectionStart) {
-      // ヒーローセクション内ではヒーローセクション用の画像を表示
-      backToTopButton.src = '../img/toscroll.png';
-      backToTopButton.alt = "Scroll down";
-      backToTopButton.style.display = 'block';
-    } else {
-      // ヒーローセクションの開始より上では表示しない
-      backToTopButton.style.display = 'none';
-    }
-  });
+  // ヒーローセクションの終了位置を更新する関数
+  function updateHeroSectionEnd() {
+    const heroSectionStart = heroSection.offsetTop;
+    heroSectionEnd = heroSectionStart + heroSection.offsetHeight;
+  }
+
+  // スクロールイベントの処理を効率化
+  function handleScroll() {
+    requestAnimationFrame(() => {
+      if (window.scrollY > heroSectionEnd) {
+        backToTopButton.src = '../img/totop.png';
+        backToTopButton.alt = "Back to top";
+        backToTopButton.className = "top-back-button";
+        backToTopButton.style.display = 'block';
+      } else if (window.scrollY >= heroSection.offsetTop) {
+        backToTopButton.src = '../img/toscroll.png';
+        backToTopButton.alt = "Scroll down";
+        backToTopButton.className = "scroll";
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+  }
+
+  // 初回とウィンドウリサイズ時にヒーローセクションの終了位置を更新
+  updateHeroSectionEnd();
+  window.addEventListener('resize', updateHeroSectionEnd);
+  window.addEventListener('scroll', handleScroll);
 
   backToTopButton.addEventListener('click', function() {
     if (window.scrollY > heroSectionEnd) {
-      // トップへ戻る機能
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   });
 });
 
 
+
+// スライドイン フェードイン
 document.addEventListener("DOMContentLoaded", function () {
   init();
 
@@ -190,7 +203,10 @@ document.addEventListener("DOMContentLoaded", function () {
   openingAnimation.addEventListener('animationend', function (e) {
     if (e.animationName === 'fadeOut') {
       openingAnimation.style.display = 'none';
+
       body.style.opacity = '1'; // ページ全体をフェードイン
+      body.style.overflow = 'visible';  // スクロール可能にする
     }
   });
 });
+
