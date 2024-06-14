@@ -891,13 +891,27 @@ html {
 .menu-item {
   flex: 0 0 auto;
   font-weight: 600;
-  font-size: calc((100vw - 320px) / 140 + 12px);
-  width: 44vw;
+  font-size: calc((100vw - 320px) / 140 + 10px);
+  width: 50vw;
   max-width: 300px;
   background-color: transparent;
   border: none;
-  margin: 0 10px;
+  margin: 0 5px;
   padding: 0;
+}
+
+@media screen and (min-width: 430px) {
+  .menu-item {
+    flex: 0 0 auto;
+    font-weight: 600;
+    font-size: calc((100vw - 320px) / 140 + 12px);
+    width: 44vw;
+    max-width: 300px;
+    background-color: transparent;
+    border: none;
+    margin: 0 10px;
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 960px) {
