@@ -9,6 +9,12 @@ html {
   font-family: "Montserrat", "游ゴシック体", YuGothic, "游ゴシック Medium",
     "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
+@media screen and (min-width: 960px) {
+  body,
+  html {
+    font-size: 1rem;
+  }
+}
 
 /* nav */
 .navbar > .container-fluid {
