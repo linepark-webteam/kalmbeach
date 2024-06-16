@@ -1826,9 +1826,10 @@ html {
 .copy {
   background-color: #cdedea;
   text-align: center;
-  padding: 10px 0;
 }
 .copy small {
+  padding: 5px 0;
+  font-size: 12px;
 }
 
 /* フッターセクション */
