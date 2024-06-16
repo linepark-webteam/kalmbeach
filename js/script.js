@@ -200,13 +200,13 @@ document.addEventListener("DOMContentLoaded", function () {
   body.style.opacity = '0';
   body.style.transition = 'opacity 2s';
 
-  openingAnimation.addEventListener('animationend', function (e) {
-    if (e.animationName === 'fadeOut') {
-      openingAnimation.style.display = 'none';
-
-      body.style.opacity = '1'; // ページ全体をフェードイン
-      body.style.overflow = 'visible';  // スクロール可能にする
-    }
-  });
+  if (openingAnimation) {
+    openingAnimation.addEventListener('animationend', function (e) {
+      if (e.animationName === 'fadeOut') {
+        openingAnimation.style.display = 'none';
+        body.style.opacity = '1'; // ページ全体をフェードイン
+        body.style.overflow = 'visible';  // スクロール可能にする
+      }
+    });
+  }
 });
-
