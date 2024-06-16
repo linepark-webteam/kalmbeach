@@ -1824,8 +1824,10 @@ html {
   }
 }
 .copy {
+  display: flex;
   background-color: #cdedea;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .copy small {
   padding: 5px 0;
