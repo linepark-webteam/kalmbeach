@@ -25,6 +25,12 @@ html {
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 960px) {
+  .logo-container {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
 
 .navbar-brand-logo {
   width: 10vw;
@@ -1859,7 +1865,7 @@ html {
 .footer-item-link {
   width: 50vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
