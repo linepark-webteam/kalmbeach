@@ -982,7 +982,7 @@ html {
 
 .about-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   width: 100%;
   padding: 100px 0;
@@ -1005,11 +1005,22 @@ html {
 }
 
 .about-txt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   margin-top: 3svh;
 }
 @media screen and (min-width: 960px) {
   .about-txt {
     margin-top: 10svh;
+  }
+}
+.about-txt p {
+  font-size: calc((100vw - 320px) / 140 + 16px);
+}
+@media screen and (min-width: 960px) {
+  .about-txt p {
+    font-size: 1.3rem;
   }
 }
 
@@ -1130,6 +1141,14 @@ html {
 @media screen and (min-width: 960px) {
   .project-txt {
     margin-top: 10svh;
+  }
+}
+.project-txt {
+      font-size: calc((100vw - 320px) / 140 + 16px);
+}
+@media screen and (min-width: 960px) {
+  .project-txt {
+        font-size: 1.3rem;
   }
 }
 .project-divider {
@@ -1264,6 +1283,20 @@ html {
     margin-right: 10vw;
   }
 }
+.project-01-txt p,
+.project-03-txt p,
+.project-05-txt p,
+.project-07-txt p {
+    font-size: calc((100vw - 320px) / 140 + 12px);
+}
+@media screen and (min-width: 960px) {
+  .project-01-txt p,
+  .project-03-txt p,
+  .project-05-txt p,
+  .project-07-txt p {
+    font-size: 1.2rem;
+  }
+}
 /* project奇数section */
 
 /* project偶数section */
@@ -1330,6 +1363,18 @@ html {
   .project-06-txt {
     width: 30vw;
     margin-right: 10vw;
+  }
+}
+.project-02-txt p,
+.project-04-txt p,
+.project-06-txt p {
+  font-size: calc((100vw - 320px) / 140 + 12px);
+}
+@media screen and (min-width: 960px) {
+  .project-02-txt p,
+  .project-04-txt p,
+  .project-06-txt p {
+    font-size: 1.2rem;
   }
 }
 /* project偶数section */
@@ -1828,7 +1873,7 @@ html {
   text-align: center;
   padding: 10px 0;
 }
-.copy small {
-}
+/* .copy small {
+} */
 
 /* フッターセクション */
