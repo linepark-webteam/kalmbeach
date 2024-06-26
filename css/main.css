@@ -1869,11 +1869,14 @@ html {
   }
 }
 .copy {
+  display: flex;
   background-color: #cdedea;
-  text-align: center;
-  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
 }
-/* .copy small {
-} */
+.copy small {
+  padding: 5px 0;
+  font-size: 12px;
+}
 
 /* フッターセクション */

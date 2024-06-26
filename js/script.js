@@ -32,12 +32,12 @@ document.addEventListener('DOMContentLoaded', function() {
   function handleScroll() {
     requestAnimationFrame(() => {
       if (window.scrollY > heroSectionEnd) {
-        backToTopButton.src = '../img/totop.png';
+        backToTopButton.src = './img/totop.webp';
         backToTopButton.alt = "Back to top";
         backToTopButton.className = "top-back-button";
         backToTopButton.style.display = 'block';
       } else if (window.scrollY >= heroSection.offsetTop) {
-        backToTopButton.src = '../img/toscroll.png';
+        backToTopButton.src = './img/toscroll.webp';
         backToTopButton.alt = "Scroll down";
         backToTopButton.className = "scroll";
         backToTopButton.style.display = 'block';
@@ -200,13 +200,13 @@ document.addEventListener("DOMContentLoaded", function () {
   body.style.opacity = '0';
   body.style.transition = 'opacity 2s';
 
-  openingAnimation.addEventListener('animationend', function (e) {
-    if (e.animationName === 'fadeOut') {
-      openingAnimation.style.display = 'none';
-
-      body.style.opacity = '1'; // ページ全体をフェードイン
-      body.style.overflow = 'visible';  // スクロール可能にする
-    }
-  });
+  if (openingAnimation) {
+    openingAnimation.addEventListener('animationend', function (e) {
+      if (e.animationName === 'fadeOut') {
+        openingAnimation.style.display = 'none';
+        body.style.opacity = '1'; // ページ全体をフェードイン
+        body.style.overflow = 'visible';  // スクロール可能にする
+      }
+    });
+  }
 });
-
