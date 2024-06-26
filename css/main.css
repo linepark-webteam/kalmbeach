@@ -69,8 +69,8 @@ html {
 /* ハンバーガーメニューボタン */
 .navbar-toggler {
   position: fixed;
-  top: 20px; /* 上からの位置 */
-  right: 20px; /* 右からの位置 */
+  top: 10px; /* 上からの位置 */
+  right: 0; /* 右からの位置 */
   z-index: 1050; /* 他の要素より前面に表示 */
   border: none;
   display: flex;

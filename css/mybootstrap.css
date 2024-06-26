@@ -7,6 +7,7 @@
 .navbar {
   position: fixed;
   width: 100%;
+  padding: 0;
   background-color: rgba(255, 255, 255, 0); /* 背景を半透明に設定 */
   z-index: 10; /* 他の要素の上に表示 */
 }
@@ -18,4 +19,31 @@
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.navbar-nav {
+  align-items: flex-end; /* 初期状態では下に配置 */
+  margin-top: 0; /* 余白をリセット */
+  padding-top: 0; /* 上部の余白をリセット */
+}
+
+@media screen and (min-width: 960px) {
+  .navbar-nav {
+    align-items: flex-start !important; /* メニューを上に配置する */
+    margin-top: 0 !important; /* 余白をリセット */
+    padding-top: 0 !important; /* 上部の余白をリセット */
+  }
+
+  .navbar-collapse {
+    display: flex !important;
+    justify-content: flex-end !important; /* メニューアイテムを右揃えにする */
+    align-items: flex-start !important; /* 上に揃える */
+    margin-top: 0 !important; /* 余白をリセット */
+    padding-top: 0 !important; /* 上部の余白をリセット */
+  }
+}
+
+.nav-item {
+  margin: 0; /* 余白をリセット */
+  padding: 0; /* パディングをリセット */
 }
