@@ -57,25 +57,23 @@ html {
     margin-right: 3vw !important;
   }
 }
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    position: fixed;
+    top: -25px;
+    right: -35px;
+  }
+}
 
 .nav-links {
   display: none;
 }
 /* ハンバーガーメニューボタン固定 */
-.navbar-toggler {
-  position: fixed;
-  top: 20px; /* 上からの位置 */
-  right: 20px; /* 右からの位置 */
-  z-index: 1050; /* 必要に応じて調整 */
-  border: none;
-  background-color: transparent;
-  box-shadow: none;
-}
 
 /* ハンバーガーメニューボタン */
 .navbar-toggler {
   position: fixed;
-  top: 10px; /* 上からの位置 */
+  top: 0; /* 上からの位置 */
   right: 0; /* 右からの位置 */
   z-index: 1050; /* 他の要素より前面に表示 */
   border: none;
@@ -94,8 +92,8 @@ html {
 
 .navbar-toggler-icon {
   background-image: url("../img/hamburger.png");
-  width: 75px; /* アイコンの幅 */
-  height: 75px; /* アイコンの高さ */
+  width: 60px; /* アイコンの幅 */
+  height: 60px; /* アイコンの高さ */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; /* 画像をコンテナの中心に配置 */
@@ -107,7 +105,7 @@ html {
 }
 
 .navbar-collapse {
-  transform: translate(-20px, 75px);
+  transform: translate(-20px, 60px);
   /* transform: translateY(50px); */
 }
 
@@ -1128,11 +1126,11 @@ html {
   }
 }
 .project-txt {
-      font-size: calc((100vw - 320px) / 140 + 16px);
+  font-size: calc((100vw - 320px) / 140 + 16px);
 }
 @media screen and (min-width: 960px) {
   .project-txt {
-        font-size: 1.3rem;
+    font-size: 1.3rem;
   }
 }
 .project-divider {
@@ -1271,7 +1269,7 @@ html {
 .project-03-txt p,
 .project-05-txt p,
 .project-07-txt p {
-    font-size: calc((100vw - 320px) / 140 + 12px);
+  font-size: calc((100vw - 320px) / 140 + 12px);
 }
 @media screen and (min-width: 960px) {
   .project-01-txt p,
@@ -1852,6 +1850,14 @@ html {
     flex-direction: row;
   }
 }
+.footer-link-txt {
+font-size: calc((100vw - 320px) / 140 + 22px);
+}
+@media screen and (min-width: 960px) {
+  .footer-link-txt {
+    font-size: 1.5rem;
+  }
+}
 .copy {
   display: flex;
   background-color: #cdedea;
@@ -1886,4 +1892,3 @@ html {
   width: 90px; /* トップへ戻るボタンのサイズ */
   height: auto;
 }
-
