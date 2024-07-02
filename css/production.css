@@ -59,27 +59,33 @@ html {
 }
 
 /* nav ハンバーガーメニュー */
+/* ハンバーガーメニューボタン */
 .navbar-toggler {
-  width: 48px;
-  height: 48px;
-  background-color: transparent; /* 背景色を透明に */
-  border: 2px solid #ff0; /* 黄色いボーダーを設定 */
-  border-radius: 50%; /* 完全な円形 */
-  box-shadow: 0 0 1px #ff0, 0 0 1px #ff0; /* 発光効果 */
-  position: relative;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 70% 50%, 100% 100%, 0% 100%);
-  /* この設定で円の右下の一部を切り取る */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; /* カーソルをポインタに */
 }
 
 .navbar-toggler-icon {
-  width: 100%;
-  height: 100%;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FFD700' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  filter: drop-shadow(0 0 0 #ff0) drop-shadow(0 0 0 #ff0); /* ネオン様の発光効果 */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-image: url("../img/hamburger-production.png");
+  width: 100px; /* アイコンの幅 */
+  height: 100px; /* アイコンの高さ */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; /* 画像をコンテナの中心に配置 */
 }
+/* メニュー展開時のスタイルを打ち消す */
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-collapse {
+  transform: translate(-30px, -20px);
+  /* transform: translateY(50px); */
+}
+
 
 /* heroセクション */
 .hero {
@@ -153,6 +159,7 @@ html {
 }
 @media screen and (min-width: 960px) {
   .hero-desc-txt {
+    width: 100%;
     display: inline-block;
     text-align: center;
   }
@@ -214,6 +221,16 @@ html {
   .hero-desc-items-mb {
     display: none;
   }
+}
+.hero-desc-txt-mb {
+  width: 100%;
+  text-align: center;
+}
+
+.hero-desc-item-img01-mb,
+.hero-desc-item-img02-mb {
+  width: 250px;
+  height: auto;
 }
 
 footer {
