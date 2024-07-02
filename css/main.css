@@ -1880,15 +1880,15 @@ font-size: calc((100vw - 320px) / 140 + 22px);
 }
 
 #back-to-top.scroll {
-  bottom: 20px;
-  right: 20px;
-  width: 60px; /* ヒーローセクション用画像のサイズ */
+  bottom: 25px;
+  right: 25px;
+  width: 60px; /* toScrollボタン画像のサイズ */
   height: auto;
 }
 
 #back-to-top.top-back-button {
-  bottom: 10px;
-  right: 10px;
-  width: 90px; /* トップへ戻るボタンのサイズ */
+  bottom: 25px;
+  right: 25px;
+  width: 90px; /* toTopボタンのサイズ */
   height: auto;
 }
