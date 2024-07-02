@@ -94,8 +94,8 @@ html {
 
 .navbar-toggler-icon {
   background-image: url("../img/hamburger.png");
-  width: 50px; /* アイコンの幅 */
-  height: auto; /* アイコンの高さ */
+  width: 75px; /* アイコンの幅 */
+  height: 75px; /* アイコンの高さ */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; /* 画像をコンテナの中心に配置 */
@@ -107,7 +107,7 @@ html {
 }
 
 .navbar-collapse {
-  transform: translate(-20px, 50px);
+  transform: translate(-20px, 75px);
   /* transform: translateY(50px); */
 }
 
