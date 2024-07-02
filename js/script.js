@@ -32,12 +32,12 @@ document.addEventListener('DOMContentLoaded', function() {
   function handleScroll() {
     requestAnimationFrame(() => {
       if (window.scrollY > heroSectionEnd) {
-        backToTopButton.src = './img/totop.webp';
+        backToTopButton.src = './img/toTop.png';
         backToTopButton.alt = "Back to top";
         backToTopButton.className = "top-back-button";
         backToTopButton.style.display = 'block';
       } else if (window.scrollY >= heroSection.offsetTop) {
-        backToTopButton.src = './img/toscroll.webp';
+        backToTopButton.src = './img/toScroll.png';
         backToTopButton.alt = "Scroll down";
         backToTopButton.className = "scroll";
         backToTopButton.style.display = 'block';
@@ -178,8 +178,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const totalWidth = menuContent.scrollWidth / 2;
 
   function repeatScroll() {
-    gsap.fromTo(menuContent, 
-      { x: 0 }, 
+    gsap.fromTo(menuContent,
+      { x: 0 },
       {
         x: -totalWidth,
         ease: 'none',

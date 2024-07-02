@@ -95,7 +95,7 @@ html {
 .navbar-toggler-icon {
   background-image: url("../img/hamburger.png");
   width: 50px; /* アイコンの幅 */
-  height: 50 px; /* アイコンの高さ */
+  height: auto; /* アイコンの高さ */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; /* 画像をコンテナの中心に配置 */
@@ -109,28 +109,6 @@ html {
 .navbar-collapse {
   transform: translate(-20px, 50px);
   /* transform: translateY(50px); */
-}
-
-/* Scroll TOPボタン */
-#back-to-top {
-  position: fixed;
-  cursor: pointer;
-  display: none; /* 初期状態では非表示 */
-  z-index: 1000;
-}
-
-#back-to-top.scroll {
-  bottom: 20px;
-  right: 20px;
-  width: 60px; /* ヒーローセクション用画像のサイズ */
-  height: auto;
-}
-
-#back-to-top.top-back-button {
-  bottom: 10px;
-  right: 10px;
-  width: 90px; /* トップへ戻るボタンのサイズ */
-  height: auto;
 }
 
 /* heroセクション */
@@ -1886,3 +1864,26 @@ html {
 }
 
 /* フッターセクション */
+
+/* Scroll TOPボタン */
+#back-to-top {
+  position: fixed;
+  cursor: pointer;
+  display: none; /* 初期状態では非表示 */
+  z-index: 1000;
+}
+
+#back-to-top.scroll {
+  bottom: 20px;
+  right: 20px;
+  width: 60px; /* ヒーローセクション用画像のサイズ */
+  height: auto;
+}
+
+#back-to-top.top-back-button {
+  bottom: 10px;
+  right: 10px;
+  width: 90px; /* トップへ戻るボタンのサイズ */
+  height: auto;
+}
+
