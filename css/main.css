@@ -195,7 +195,7 @@ html {
 @media screen and (min-width: 375px) {
   .hero-animation-item-02 {
     bottom: 65%;
-    left: 38%;
+    left: 45%;
     width: 15vw;
     height: 14.37vw;
     max-width: 119px;
@@ -205,7 +205,7 @@ html {
 @media screen and (min-width: 430px) {
   .hero-animation-item-02 {
     bottom: 65%;
-    left: 30%;
+    left: 45%;
     width: 15vw;
     height: 14.37vw;
     max-width: 119px;
@@ -384,8 +384,8 @@ html {
 }
 @media screen and (min-width: 430px) {
   .hero-animation-item-05 {
-    bottom: 50%;
-    left: 62%;
+    bottom: 60%;
+    left: 70%;
     width: 10vw;
     height: 13.214vw;
     max-width: 112px;
@@ -505,7 +505,7 @@ html {
 @media screen and (min-width: 430px) {
   .hero-animation-item-07 {
     bottom: 70%;
-    left: 20%;
+    left: 26%;
     width: 10vw;
     height: 9.81vw;
     max-width: 105px;
@@ -853,6 +853,15 @@ html {
 .site-ttl-content {
   display: flex;
   justify-content: center;
+}
+
+.site-ttl-logo {
+  width: 90vw;
+}
+@media screen and (min-width: 960px) {
+  .site-ttl-logo {
+    width: fit-content;
+  }
 }
 /* hero タイトルロゴ */
 
@@ -1851,7 +1860,7 @@ html {
   }
 }
 .footer-link-txt {
-font-size: calc((100vw - 320px) / 140 + 22px);
+  font-size: calc((100vw - 320px) / 140 + 22px);
 }
 @media screen and (min-width: 960px) {
   .footer-link-txt {
