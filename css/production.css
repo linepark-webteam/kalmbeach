@@ -30,7 +30,7 @@ html {
   width: 10vw;
 }
 @media screen and (min-width: 960px) {
-  .navbar-brand-logo{
+  .navbar-brand-logo {
     max-width: 59px;
     max-height: 69px;
   }
@@ -47,11 +47,10 @@ html {
 }
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
-      flex-direction: row;
-      margin-right: 3vw !important;
+    flex-direction: row;
+    margin-right: 3vw !important;
   }
 }
-
 
 .nav-link {
   color: #f1eed3;
@@ -69,8 +68,9 @@ html {
 
 .navbar-toggler-icon {
   background-image: url("../img/hamburger-production.png");
-  width: 100px; /* アイコンの幅 */
-  height: 100px; /* アイコンの高さ */
+  width: 60px;
+  height: 60px;
+  border: none;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; /* 画像をコンテナの中心に配置 */
@@ -86,14 +86,13 @@ html {
   /* transform: translateY(50px); */
 }
 
-
 /* heroセクション */
 .hero {
   margin: 10svh 0;
 }
 @media screen and (min-width: 960px) {
   .hero {
-    margin: 10svh 0 ;
+    margin: 10svh 0;
     margin: 100px 0 200px;
   }
 }
@@ -215,7 +214,7 @@ html {
 .hero-desc-items-mb {
   display: flex;
   flex-direction: column;
-  align-items: center
+  align-items: center;
 }
 @media screen and (min-width: 960px) {
   .hero-desc-items-mb {
